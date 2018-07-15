@@ -20,7 +20,7 @@
 
       <p class="language__title">'. $key['title'] .'</p> 
 
-      <img src="'. $key['image'] .'" width="'. $key['width'] .'" height="40" alt="'. $key['alt'] .'" class=""> 
+      <img src="'. $key['image'] .'" width="'. $key['width'] .'" height="'. $key['height'] .'" alt="'. $key['alt'] .'" class=""> 
 
      </a>';
 

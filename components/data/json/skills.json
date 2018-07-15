@@ -1,84 +1,84 @@
 {
     "skills": [
         {
-            "url": "",
+            "url": "https://www.w3.org/TR/html51/",
             "title": "HTML5",
             "image": "/components/images/logos/HTML5_logo.svg",
             "alt": "Great at HTML",
-            "width": "40",
-            "height": ""
+            "width": "50",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "https://www.ampproject.org/",
             "title": "Google AMP",
             "image": "/components/images/logos/ampproject-official.svg",
             "alt": "",
-            "width": "40",
-            "height": ""
+            "width": "50",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "http://lesscss.org/",
             "title": "LESS",
             "image": "/components/images/logos/LESS_Logo.svg",
             "alt": "",
-            "width": "90",
-            "height": ""
+            "width": "115",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "http://www.ecma-international.org/memento/tc39.htm",
             "title": "Javascript",
             "image": "/components/images/logos/javascript.svg",
             "alt": "",
-            "width": "40",
-            "height": ""
+            "width": "50",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "https://www.w3.org/standards/techs/css#w3c_all",
             "title": "CSS3",
             "image": "/components/images/logos/CSS3_logo.svg",
             "alt": "",
-            "width": "40",
-            "height": ""
+            "width": "50",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "https://amplience.com/",
             "title": "Amplience",
             "image": "/components/images/logos/Amplience-star.svg",
             "alt": "",
-            "width": "40",
-            "height": ""
+            "width": "50",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "https://getbootstrap.com/",
             "title": "Bootstrap 3/4",
             "image": "/components/images/logos/Bootstrap-logo.svg",
             "alt": "",
-            "width": "40",
-            "height": ""
+            "width": "50",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "https://www.magento.com/",
             "title": "Magento",
             "image": "/components/images/logos/magento-seeklogo.com.svg",
             "alt": "",
-            "width": "40",
-            "height": ""
+            "width": "50",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "http://www.php.net/",
             "title": "PHP",
             "image": "/components/images/logos/PHP-logo.svg",
             "alt": "",
-            "width": "40",
-            "height": ""
+            "width": "50",
+            "height": "50"
         },
         {
-            "url": "",
+            "url": "https://git-scm.com/",
             "title": "Git hub",
             "image": "/components/images/logos/github.svg",
             "alt": "",
-            "width": "71",
-            "height": ""
+            "width": "51",
+            "height": "50"
         }
     ]
 }
