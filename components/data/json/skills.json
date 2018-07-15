@@ -1,0 +1,84 @@
+{
+    "skills": [
+        {
+            "url": "",
+            "title": "HTML5",
+            "image": "/components/images/logos/HTML5_logo.svg",
+            "alt": "Great at HTML",
+            "width": "40",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "Google AMP",
+            "image": "/components/images/logos/ampproject-official.svg",
+            "alt": "",
+            "width": "40",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "LESS",
+            "image": "/components/images/logos/LESS_Logo.svg",
+            "alt": "",
+            "width": "90",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "Javascript",
+            "image": "/components/images/logos/javascript.svg",
+            "alt": "",
+            "width": "40",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "CSS3",
+            "image": "/components/images/logos/CSS3_logo.svg",
+            "alt": "",
+            "width": "40",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "Amplience",
+            "image": "/components/images/logos/Amplience-star.svg",
+            "alt": "",
+            "width": "40",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "Bootstrap 3/4",
+            "image": "/components/images/logos/Bootstrap-logo.svg",
+            "alt": "",
+            "width": "40",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "Magento",
+            "image": "/components/images/logos/magento-seeklogo.com.svg",
+            "alt": "",
+            "width": "40",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "PHP",
+            "image": "/components/images/logos/PHP-logo.svg",
+            "alt": "",
+            "width": "40",
+            "height": ""
+        },
+        {
+            "url": "",
+            "title": "Git hub",
+            "image": "/components/images/logos/github.svg",
+            "alt": "",
+            "width": "71",
+            "height": ""
+        }
+    ]
+}
