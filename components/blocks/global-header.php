@@ -1,22 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Adrian Bateman's Portfolio</title>
-  <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-  <link type="text/css" rel="stylesheet" href="/components/style/css/main.css" >
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="Adrian Bateman, Website Developer, Full Stack Developer, Front End Developer, Back End Developer."/>
+    <meta name="keywords" content="Website Developer, PHP, Javascript, Hybris, Amplience, CSS, HTML5, CSS3, OOPHP, Front End Developer, Back End Developer"/>
+    <meta name="robots" content="INDEX,FOLLOW"/>
+    <meta property="og:type" content="og:website" />
+    <meta property="og:title" content="Adrian Bateman - Full Stack Website Developer" />
+    <meta property="og:image" content="/components/images/icon/signiture.svg" />
+    <meta property="og:description" content="Adrian Bateman, Website Developer, Full Stack Developer, Front End Developer, Back End Developer." />
+    <meta property="og:url" content="http://www.a-bateman.co.uk/" />
+    
+    <title>Adrian Bateman's Portfolio - Full Stack Website Developer</title>
+    
+    <!-- Icon Links -->
+    <link rel="icon" href="/components/images/icon/a-bateman-icon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/components/images/icon/a-bateman-icon.ico" type="image/x-icon" />
+
+    <!-- manifest file -->
+    <link rel="manifest" href="/manifest.json">
+ 
+    <!-- Style -->
+    <style type="text/css">
+        <?php  
+            include ('./components/style/css/main.css');
+        ?>
+    </style>
 </head>
+
 <body>
-<a href="/" class="header__wrapper">
+<a href="/" class="js-TopLinkTo header__wrapper">
   <h1 class="header__title">Adrian Bateman</h1>
   <p class="header__text">Website Developer</p>
 </a>
 
-<div class="navigation__wrapper">
-  <a href="/" class="navigation__item navigation--<?php if($active == "home"){echo 'active';} ?>">Home</a>
-  <a href="/work.php" class="navigation__item navigation--<?php if($active == "work"){echo 'active';} ?>">Work</a>
-  <a href="/skills.php" class="navigation__item navigation--<?php if($active == "skills"){echo 'active';} ?>">Skils</a>
-  <a href="/bio.php" class="navigation__item navigation--<?php if($active == "bio"){echo 'active';} ?>">Bio</a>
-  <a href="/hobbies.php" class="navigation__item navigation--<?php if($active == "hobbies"){echo 'active';} ?>">Hobbies</a>
+<div class="navigation__wrapper margin-top-25">
+  <div class="js-homeLink navigation__item navigation--active">Home</div>
+  <div class="js-workLink navigation__item">Work</div>
+  <div class="js-skillsLink navigation__item">Skils</div>
+  <div class="js-bioLink navigation__item">Bio</div>
+  <div class="js-hobbiesLink navigation__item">Hobbies</div>
 </div>

@@ -3,7 +3,8 @@
         {
             "url": "https://www.w3.org/TR/html51/",
             "title": "HTML5",
-            "image": "/components/images/logos/HTML5_logo.svg",
+            "image": "/components/images/logos/html5.png",
+            "image-webp": "/components/images/logos/html5.webp",
             "alt": "Great at HTML",
             "width": "50",
             "height": "50"
@@ -11,7 +12,8 @@
         {
             "url": "https://www.ampproject.org/",
             "title": "Google AMP",
-            "image": "/components/images/logos/ampproject-official.svg",
+            "image": "/components/images/logos/ampproject.png",
+            "image-webp": "",
             "alt": "",
             "width": "50",
             "height": "50"
@@ -19,15 +21,17 @@
         {
             "url": "http://lesscss.org/",
             "title": "LESS",
-            "image": "/components/images/logos/LESS_Logo.svg",
+            "image": "/components/images/logos/less.png",
+            "image-webp": "/components/images/logos/less.webp",
             "alt": "",
-            "width": "115",
+            "width": "112",
             "height": "50"
         },
         {
             "url": "http://www.ecma-international.org/memento/tc39.htm",
             "title": "Javascript",
-            "image": "/components/images/logos/javascript.svg",
+            "image": "/components/images/logos/javascript.png",
+            "image-webp": "",
             "alt": "",
             "width": "50",
             "height": "50"
@@ -35,15 +39,17 @@
         {
             "url": "https://www.w3.org/standards/techs/css#w3c_all",
             "title": "CSS3",
-            "image": "/components/images/logos/CSS3_logo.svg",
+            "image": "/components/images/logos/css3.png",
+            "image-webp": "/components/images/logos/css3.webp",
             "alt": "",
-            "width": "50",
+            "width": "35",
             "height": "50"
         },
         {
             "url": "https://amplience.com/",
             "title": "Amplience",
-            "image": "/components/images/logos/Amplience-star.svg",
+            "image": "/components/images/logos/amplience.png",
+            "image-webp": "/components/images/logos/amplience.webp",
             "alt": "",
             "width": "50",
             "height": "50"
@@ -51,7 +57,8 @@
         {
             "url": "https://getbootstrap.com/",
             "title": "Bootstrap 3/4",
-            "image": "/components/images/logos/Bootstrap-logo.svg",
+            "image": "/components/images/logos/bootstrap.png",
+            "image-webp": "",
             "alt": "",
             "width": "50",
             "height": "50"
@@ -59,7 +66,8 @@
         {
             "url": "https://www.magento.com/",
             "title": "Magento",
-            "image": "/components/images/logos/magento-seeklogo.com.svg",
+            "image": "/components/images/logos/magento.png",
+            "image-webp": "",
             "alt": "",
             "width": "50",
             "height": "50"
@@ -67,18 +75,43 @@
         {
             "url": "http://www.php.net/",
             "title": "PHP",
-            "image": "/components/images/logos/PHP-logo.svg",
+            "image": "/components/images/logos/php.png",
+            "image-webp": "/components/images/logos/php.webp",
             "alt": "",
-            "width": "50",
+            "width": "93",
             "height": "50"
         },
         {
             "url": "https://git-scm.com/",
             "title": "Git hub",
-            "image": "/components/images/logos/github.svg",
+            "image": "/components/images/logos/github.png",
+            "image": "/components/images/logos/github.webp",
             "alt": "",
-            "width": "51",
+            "width": "50",
             "height": "50"
+        }
+    ],
+    "work": [
+        {
+            "image": "components/images/work-sites/dreams-background-xsmall.png",
+            "image-placeholder":"components/images/work-sites/dreams-background-placeholder.jpg",
+            "image-width": "170",
+            "image-height": "100",
+            "title": "Dreams Ltd",
+            "link": "https://www.dreams.co.uk",
+            "link-text": "www.Dreams.co.uk",
+            "position": "Junior Front End Developer",
+            "description": "<p>Originaly joining as a junior web developer in order to help out with day to day tasks, I quickly became a valued member of the online trading team.  Assisting with not only the day to day tasks but also improving the site load speed, using tried and tested teqniques. This helps improve customer experience and overal bounce rate & spend rate.</p><p>We switched platforms from Magento to Hybris and Amplience to proved a \"Headless Web\" experience. This meant that we had only one source of information going to each required destination.</p><p>We developed a mobile version of the site, working closley with Google. This version uses the same Amplience feed as Hybris but is build entirely in-house in PHP with Google's AMP project to help page load times.</p>"
+        },
+        {
+            "image": "",
+            "image-width": "",
+            "image-height": "",
+            "title": "Websites By Lime Ltd",
+            "link": "https://www.websitesbylime.co.uk/",
+            "link-text": "www.websitesbylime.co.uk/",
+            "position": "Website Developer",
+            "description": "<p>Creating, maintaining and developing websites either bespoke or using eisting templates as per customer requests. Develop for Mobile first using Bootstrap. Create and import Domains. Set-up Email addresses. Ensure images are mobile friendly. Creating and altering designs based on conversing with customers.</p>"
         }
     ]
 }
