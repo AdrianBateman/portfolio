@@ -31,12 +31,12 @@
 </head>
 
 <body>
-<a href="/" class="js-TopLinkTo header__wrapper">
+<a href="/" class="js-TopLinkTo header__wrapper margin-top-sm">
   <h1 class="header__title">Adrian Bateman</h1>
-  <p class="header__text">Website Developer</p>
+  <h2 class="header__text">Website Developer</h2>
 </a>
 
-<div class="navigation__wrapper margin-top-25">
+<div class="navigation__wrapper margin-top-sm">
   <div class="js-homeLink navigation__item navigation--active">Home</div>
   <div class="js-workLink navigation__item">Work</div>
   <div class="js-skillsLink navigation__item">Skils</div>

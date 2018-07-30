@@ -13,18 +13,30 @@ p {
     font-size: 16px;
 }
 
-.margin-bottom-25 {
+.width--40 {
+    width: 40%;
+}
+
+.margin-bottom-sm {
     margin-bottom: 25px;
 }
-.margin-bottom-50 {
+.margin-bottom-md {
     margin-bottom: 50px;
 }
-.margin-top-25 {
+.margin-bottom-lg {
+    margin-bottom: 100px;
+}
+
+.margin-top-sm {
     margin-top: 25px;
 }
-.margin-top-50 {
+.margin-top-md {
     margin-top: 50px;
 }
+.margin-top-lg {
+    margin-top: 100px;
+}
+
 
 .text--center {
     text-align: center;
@@ -87,7 +99,7 @@ p {
 
         }
         &:hover {
-            background-color: #7BC5EA;
+            background-color:fade(#7BC5EA, 10%);
         }
         @media only screen and (min-width: 375px) {
             font-size: 16px;
@@ -99,31 +111,45 @@ p {
 }
 
 .language {
-    &__wrapper {
+    &__inner-wrapper{
         display: flex;
-        width: calc(~"100% - 30px");
-        max-width: 950px;
-        margin-left: auto;
-        margin-right: auto;
         flex-direction: row;
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-between;
         overflow: hidden;
     }
+    &__wrapper {
+        width: calc(~"100% - 30px");
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     &__title {
         color: #000;
     }
     &__item {
-        // min-width: 115px;
+        display: flex;
+        width: 100%;
         margin-left: 15px;
         margin-right: 15px;
         border: 0;
         text-decoration: none;
         text-align: center;
+
         &:hover img {
             transform: scale(1.1);
         }
+
+        @media only screen and (min-width: @screen-tab){
+            width: 45%;
+        }
+        @media only screen and (min-width: @screen-desk){
+            width: calc(~"100% / 3 - 30px");
+        }
+    }
+    &__text-wrapper {
+        width: 60%;
     }
 }
 
