@@ -53,8 +53,8 @@
     ],
     "work": [
         {
-            "image": "components/images/work-sites/dreams-background-xsmall.png",
-            "image-placeholder":"components/images/work-sites/dreams-background-placeholder.jpg",
+            "image": "/components/images/work-sites/dreams-background-xsmall.png",
+            "image-placeholder":"/components/images/work-sites/dreams-background-placeholder.jpg",
             "image-width": "170",
             "image-height": "100",
             "title": "Dreams Ltd",

@@ -33,6 +33,7 @@ echo '<div class="js-languagesArticle language__wrapper margin-top-md">
 
         <div class="language__inner-wrapper">';
 
+
 foreach ($jsonData['languages'] as $key) {
     $starImages = "";
     $i = 0;
@@ -65,7 +66,7 @@ echo '</div>
  *
  **********************/
 
-echo '<div class="js-workArticle work__wrapper margin-top-md">';
+echo '<div class="js-workArticle work__wrapper margin-top-lg">';
 
 foreach ($jsonData['work'] as $key) {
     echo '
@@ -94,7 +95,7 @@ echo '</div>';
  *
  **********************/
 
-echo '<div class="js-skillsArticle language__wrapper margin-top-md">
+echo '<div class="js-skillsArticle language__wrapper margin-top-lg">
         
         <h2 class="text--center margin-bottom-sm">Skills</h2>
 
@@ -129,6 +130,37 @@ echo '</div>
 
 
 echo '</div>';
+
+
+/**********************
+ * 
+ *  hobbies section
+ *
+ **********************/
+
+echo '<div class="js-hobbiesArticle language__wrapper margin-top-lg">
+        
+        <h2 class="text--center margin-bottom-sm">Hobbies</h2>
+
+        <div style="display: block;width: 80%;margin: auto;height: 500px;border:1px solid black;"></div>
+    </div>';
+
+
+/**********************
+ * 
+ *  contact section
+ *
+ **********************/
+
+echo '<div class="js-contactArticle language__wrapper margin-top-lg">
+        
+    <h2 class="text--center margin-bottom-sm">Contact</h2>
+
+    <div style="display: block;width: 80%;margin: auto;height: 500px;border:1px solid black;"></div>
+
+</div>';
+
+
 
 //  include footer
 include './components/blocks/global-footer.php';

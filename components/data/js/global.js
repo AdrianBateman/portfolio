@@ -3,44 +3,43 @@
  *  Lazy load images on scroll
  *
  *******************************/
-document.addEventListener("DOMContentLoaded", function () {
-    let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
-    let active = false;
 
-    const lazyLoad = function () {
-        if (active === false) {
-            active = true;
+let lazyImages = [].slice.call(document.querySelectorAll("img.lazy"));
+let active = false;
 
-            setTimeout(function () {
-                lazyImages.forEach(function (lazyImage) {
-                    if ((lazyImage.getBoundingClientRect().top <= window.innerHeight &&
-                            lazyImage.getBoundingClientRect().bottom >= 0) &&
-                        getComputedStyle(lazyImage).display !== "none") {
-                        lazyImage.src = lazyImage.dataset.src;
-                        lazyImage.srcset = lazyImage.dataset.srcset;
-                        lazyImage.classList.remove("lazy");
+const lazyLoad = function () {
+    if (active === false) {
+        active = true;
 
-                        lazyImages = lazyImages.filter(function (image) {
-                            return image !== lazyImage;
-                        });
+        setTimeout(function () {
+            lazyImages.forEach(function (lazyImage) {
+                if ((lazyImage.getBoundingClientRect().top <= window.innerHeight &&
+                        lazyImage.getBoundingClientRect().bottom >= 0) &&
+                    getComputedStyle(lazyImage).display !== "none") {
+                    lazyImage.src = lazyImage.dataset.src;
+                    lazyImage.srcset = lazyImage.dataset.srcset;
+                    lazyImage.classList.remove("lazy");
 
-                        if (lazyImages.length === 0) {
-                            document.removeEventListener("scroll", lazyLoad);
-                            window.removeEventListener("resize", lazyLoad);
-                            window.removeEventListener("orientationchange", lazyLoad);
-                        }
+                    lazyImages = lazyImages.filter(function (image) {
+                        return image !== lazyImage;
+                    });
+
+                    if (lazyImages.length === 0) {
+                        document.removeEventListener("scroll", lazyLoad);
+                        window.removeEventListener("resize", lazyLoad);
+                        window.removeEventListener("orientationchange", lazyLoad);
                     }
-                });
+                }
+            });
 
-                active = false;
-            }, 200);
-        }
-    };
+            active = false;
+        }, 200);
+    }
+};
 
-    document.addEventListener("scroll", lazyLoad);
-    window.addEventListener("resize", lazyLoad);
-    window.addEventListener("orientationchange", lazyLoad);
-});
+document.addEventListener("scroll", lazyLoad);
+window.addEventListener("resize", lazyLoad);
+window.addEventListener("orientationchange", lazyLoad);
 
 
 /*******************************
@@ -87,6 +86,8 @@ menuClick("js-homeLink", "js-TopLinkTo");
 menuClick("js-languagesLink", "js-languagesArticle");
 menuClick("js-workLink", "js-workArticle");
 menuClick("js-skillsLink", "js-skillsArticle");
+menuClick("js-hobbiesLink", "js-hobbiesArticle");
+menuClick("js-contactLink", "js-contactArticle");
 
 
 /*******************************
@@ -100,18 +101,18 @@ function isVisible(ele) {
         top,
         bottom
     } = ele.getBoundingClientRect();
-    const vHeight = (window.innerHeight || document.documentElement.clientHeight);
 
+    const vHeight = (window.innerHeight || document.documentElement.clientHeight);
+    
     return (
-        (top > 0 || bottom > 0) &&
-        top < vHeight
+        top < 150 && bottom > (vHeight / 4) && top < vHeight
     );
 }
 
 function linkActive(navLink, articlePosition) {
 
-    var link = document.getElementsByClassName(navLink)[0];
-    var view = document.getElementsByClassName(articlePosition)[0];
+    const link = document.getElementsByClassName(navLink)[0];
+    const view = document.getElementsByClassName(articlePosition)[0];
 
     if (isVisible(view)) {
         link.classList.add('navigation--active');
@@ -127,4 +128,6 @@ document.addEventListener("scroll", function () {
     linkActive("js-languagesLink", "js-languagesArticle");
     linkActive("js-workLink", "js-workArticle");
     linkActive("js-skillsLink", "js-skillsArticle");
+    linkActive("js-hobbiesLink", "js-hobbiesArticle");
+    linkActive("js-contactLink", "js-contactArticle");
 });
