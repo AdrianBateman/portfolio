@@ -23,11 +23,11 @@ $jsonData = $jsonObj->get_jsonArr();
 
 /*************************************
  * 
- *  languages / skills section
+ *  languages section
  *
  *************************************/
 
-echo '<div class="language__wrapper margin-top-md">
+echo '<div class="js-languagesArticle language__wrapper margin-top-md">
         
         <h2 class="text--center margin-bottom-sm">Languages</h2>
 
@@ -94,10 +94,41 @@ echo '</div>';
  *
  **********************/
 
-echo '<div class="js-skillsArticle work__wrapper margin-top-md">
-<h2>Skills</h2>
-<div style="display:block; height: 600px;width: 100%;"></div>
-</div>';
+echo '<div class="js-skillsArticle language__wrapper margin-top-md">
+        
+        <h2 class="text--center margin-bottom-sm">Skills</h2>
+
+        <div class="language__inner-wrapper">';
+
+
+foreach ($jsonData['skills'] as $key) {
+    $starImages = "";
+    $i = 0;
+    while ($i++ < $key['competency'])
+    {
+        $starImages .= '<img src="components/images/star.svg" >'; 
+    }
+
+    echo '
+            <a href="' . $key['url'] . '" target="_blank" rel="noopener" title="' . $key['title'] . '" class="language__item">
+
+                <picture class="width--40">
+                    <source srcset="' . $key['image-webp'] . '" type="image/webp">
+                    <source srcset="' . $key['image'] . '" type="image/jpeg">
+                    <img src="' . $key['image'] . '" width="' . $key['width'] . '" height="' . $key['height'] . '" alt="' . $key['alt'] . '" class="margin-bottom-sm">
+                </picture>
+                <div class="language__text-wrapper text--left">
+                    <h3 class="language__title">' . $key['title'] . '</h3>
+                    <p>' . $starImages . '</p>
+                </div>
+            </a>';
+}
+
+echo '</div>
+    </div>';
+
+
+echo '</div>';
 
 //  include footer
 include './components/blocks/global-footer.php';

@@ -84,6 +84,7 @@ function menuClick(jsLinkFrom, jsLinkTo) {
 }
 
 menuClick("js-homeLink", "js-TopLinkTo");
+menuClick("js-languagesLink", "js-languagesArticle");
 menuClick("js-workLink", "js-workArticle");
 menuClick("js-skillsLink", "js-skillsArticle");
 
@@ -105,7 +106,6 @@ function isVisible(ele) {
         (top > 0 || bottom > 0) &&
         top < vHeight
     );
-
 }
 
 function linkActive(navLink, articlePosition) {
@@ -124,6 +124,7 @@ function linkActive(navLink, articlePosition) {
 
 document.addEventListener("scroll", function () {
     linkActive("js-homeLink", "js-TopLinkTo");
+    linkActive("js-languagesLink", "js-languagesArticle");
     linkActive("js-workLink", "js-workArticle");
     linkActive("js-skillsLink", "js-skillsArticle");
 });

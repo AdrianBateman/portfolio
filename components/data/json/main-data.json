@@ -82,7 +82,8 @@
             "image-webp": "",
             "alt": "",
             "width": "50",
-            "height": "50"
+            "height": "50",
+            "competency": "5"
         },
         {
             "url": "https://git-scm.com/",
@@ -91,7 +92,8 @@
             "image": "/components/images/logos/github.webp",
             "alt": "",
             "width": "50",
-            "height": "50"
+            "height": "50",
+            "competency": "4"
         },
         {
             "url": "https://getbootstrap.com/",
@@ -100,7 +102,8 @@
             "image-webp": "",
             "alt": "",
             "width": "50",
-            "height": "50"
+            "height": "50",
+            "competency": "5"
         },
         {
             "url": "https://amplience.com/",
@@ -109,7 +112,8 @@
             "image-webp": "/components/images/logos/amplience.webp",
             "alt": "",
             "width": "50",
-            "height": "50"
+            "height": "50",
+            "competency": "3"
         },
         {
             "url": "https://www.magento.com/",
@@ -118,7 +122,8 @@
             "image-webp": "",
             "alt": "",
             "width": "50",
-            "height": "50"
+            "height": "50",
+            "competency": "3"
         }
     ]
 }

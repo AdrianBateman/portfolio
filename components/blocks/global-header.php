@@ -28,6 +28,7 @@
             include ('./components/style/css/main.css');
         ?>
     </style>
+
 </head>
 
 <body>
@@ -36,10 +37,6 @@
   <h2 class="header__text">Website Developer</h2>
 </a>
 
-<div class="navigation__wrapper margin-top-sm">
-  <div class="js-homeLink navigation__item navigation--active">Home</div>
-  <div class="js-workLink navigation__item">Work</div>
-  <div class="js-skillsLink navigation__item">Skils</div>
-  <div class="js-bioLink navigation__item">Bio</div>
-  <div class="js-hobbiesLink navigation__item">Hobbies</div>
-</div>
+<?php  
+    include('./components/blocks/global-menu.php');
+?>
