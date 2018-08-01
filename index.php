@@ -6,7 +6,7 @@ $active = "home";
 include './components/blocks/global-header.php';
 
 // Global classes
-include './components/functions/global-functions.php';
+include './components/data/php/global-class.php';
 
 /***************************
  *  
@@ -49,8 +49,8 @@ foreach ($jsonData['languages'] as $key) {
                     <source srcset="' . $key['image'] . '" type="image/jpeg">
                     <img src="' . $key['image'] . '" width="' . $key['width'] . '" height="' . $key['height'] . '" alt="' . $key['alt'] . '" class="margin-bottom-sm">
                 </picture>
-                <div class="language__text-wrapper">
-                    <h3 class="language__title text--center">' . $key['title'] . '</h3>
+                <div class="language__text-wrapper text--left">
+                    <h3 class="language__title">' . $key['title'] . '</h3>
                     <p>' . $starImages . '</p>
                 </div>
             </a>';
