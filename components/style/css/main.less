@@ -1,4 +1,4 @@
-@screen-mobile: 640px;
+@screen-mobile: 699px;
 @screen-tab: 700px;
 @screen-desk: 1200px;
 
@@ -73,10 +73,10 @@ p {
     &__wrapper {
         position: sticky;
         top: 0px;
-        width: 100%;
+        width: calc(~"100% - 40px");
         margin-left: auto;
         margin-right: auto;
-        padding: 10px 0 5px 0;
+        padding: 10px 0 5px 20px;
         border-bottom: 2px solid #7BC5EA;
         text-decoration: none;
         background-color: #fff;
@@ -93,23 +93,13 @@ p {
         border-top-right-radius: 5px;
         text-decoration: none;
         color: #172E4E;
-        &:nth-child(1){
-            margin-left: 20px;
-            @media only screen and (min-width: @screen-tab) {
-                margin-left:30px;
-            }
-
-        }
         &:hover {
-            background-color:fade(#7BC5EA, 10%);
-        }
-        @media only screen and (min-width: 375px) {
-            font-size: 16px;
+            background-color: fade(#7BC5EA, 10%);
         }
     }
     &--active {
         border-color: #7BC5EA;
-        background-color:fade(#7BC5EA, 10%);
+        background-color: fade(#7BC5EA, 10%);
     }
 }
 
@@ -175,6 +165,7 @@ p {
         }
         &__image {
             width: 100%;
+            max-width: 200px;
             height: 100%;
             &-wrapper {
                 width: 100%;
@@ -192,6 +183,20 @@ p {
                 width: calc(~"70% - 60px");
                 margin-left: 30px;
                 margin-right: 30px;
+            }
+        }
+        &-examples{
+            width: 100%;
+            @media only screen and (min-width: @screen-tab) {
+                width: 50%;
+            }
+            &__wrapper{
+                display: flex;
+                flex-direction: column;
+                @media only screen and (min-width: @screen-tab) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
             }
         }
     }

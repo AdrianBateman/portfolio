@@ -49,14 +49,24 @@
             "width": "93",
             "height": "50",
             "competency": "3"
+        },
+        {
+            "url": "https://java.com",
+            "title": "Java",
+            "image": "/components/images/logos/java.png",
+            "image-webp": "/components/images/logos/java.webp",
+            "alt": "",
+            "width": "26",
+            "height": "50",
+            "competency": "3"
         }    
     ],
     "work": [
         {
-            "image": "/components/images/work-sites/dreams-background-xsmall.png",
-            "image-placeholder":"/components/images/work-sites/dreams-background-placeholder.jpg",
-            "image-width": "170",
-            "image-height": "100",
+            "image": "/components/images/work-sites/dreams.png",
+            "image-placeholder":"/components/images/work-sites/dreams-placeholder.jpg",
+            "image-width": "200",
+            "image-height": "58",
             "title": "Dreams Ltd",
             "link": "https://www.dreams.co.uk",
             "link-text": "www.Dreams.co.uk",
@@ -64,15 +74,78 @@
             "description": "<p>Originaly joining as a junior web developer in order to help out with day to day tasks, I quickly became a valued member of the online trading team.  Assisting with not only the day to day tasks but also improving the site load speed, using tried and tested teqniques. This helps improve customer experience and overal bounce rate & spend rate.</p><p>We switched platforms from Magento to Hybris and Amplience to proved a \"Headless Web\" experience. This meant that we had only one source of information going to each required destination.</p><p>We developed a mobile version of the site, working closley with Google. This version uses the same Amplience feed as Hybris but is build entirely in-house in PHP with Google's AMP project to help page load times.</p>"
         },
         {
-            "image": "",
-            "image-width": "",
-            "image-height": "",
+            "image": "/components/images/work-sites/websitesbylime.png",
+            "image-placeholder":"/components/images/work-sites/websitesbylime-placeholder.jpg",
+            "image-width": "200",
+            "image-height": "160",
             "title": "Websites By Lime Ltd",
-            "link": "https://www.websitesbylime.co.uk/",
-            "link-text": "www.websitesbylime.co.uk/",
+            "link": "https://www.websitesbylime.co.uk",
+            "link-text": "www.WebsitesByLime.co.uk",
             "position": "Website Developer",
-            "description": "<p>Creating, maintaining and developing websites either bespoke or using eisting templates as per customer requests. Develop for Mobile first using Bootstrap. Create and import Domains. Set-up Email addresses. Ensure images are mobile friendly. Creating and altering designs based on conversing with customers.</p>"
-        }
+            "description": "<p>Creating, maintaining and developing websites either bespoke or using eisting templates as per customer requests. Develop for Mobile first using Bootstrap. Create and import Domains. Set-up Email addresses. Ensure images are mobile friendly. Creating and altering designs based on conversing with customers.</p>",
+            "sites-created": [
+                {
+                    "image": "/components/images/work-sites/alphaclean.png",
+                    "image-placeholder":"/components/images/work-sites/alphaclean-placeholder.jpg",
+                    "image-width": "198",
+                    "image-height": "61",
+                    "title": "Alpha Cleaning",
+                    "link": "http://alphacleaningoxon.co.uk",
+                    "link-text": "www.AlphaCleaningOxon.co.uk",
+                    "position": "WebsitesByLime - Developer",
+                    "description": "<p>Custom logo created in Inkscape SVG format for better scaling. Mobile friendly. A simple site with customers own images added to give a moer personal feel.</p>",
+                    "skills": "HTML5, CSS3, LESS, PHP, Bootstrap 3, Inkscape, GIMP"
+                },
+                {
+                    "image": "/components/images/work-sites/southhantslawns.png",
+                    "image-placeholder":"/components/images/work-sites/southhantslawns-placeholder.jpg",
+                    "image-width": "200",
+                    "image-height": "85",
+                    "title": "South Hants Lawns",
+                    "link": "http://southhantslawns.co.uk",
+                    "link-text": "www.SouthHantsLawns.co.uk",
+                    "position": "WebsitesByLime - Developer",
+                    "description": "<p>A joint creation.  This customer had very specific requests includin modifing the inner HTML when on a small screen. This was done using jquery on the screen size.</p>",
+                    "skills": "HTML5, CSS3, LESS, PHP, Javascript, jQuery, Bootstrap 3"
+                },
+                {
+                    "image": "/components/images/work-sites/jamesthorprcarpentry.png",
+                    "image-placeholder":"/components/images/work-sites/jamesthorprcarpentry-placeholder.jpg",
+                    "image-width": "200",
+                    "image-height": "30",
+                    "title": "James Thorpe Bespoke Carpentry",
+                    "link": "http://jamesthorpecarpentry.co.uk",
+                    "link-text": "www.JamesThorpeCarpentry.co.uk",
+                    "position": "WebsitesByLime - Developer",
+                    "description": "<p>This customer had a very specific look in mind.  He wanted to show case his work as the background. The effect was created using CSS3 animations.  We went through numerous iterations to arrive at the final look including changing the text background and positions.</p>",
+                    "skills": "HTML5, CSS3, LESS, PHP"
+                },
+                {
+                    "image": "/components/images/work-sites/townncountry.png",
+                    "image-placeholder":"/components/images/work-sites/townncountry-placeholder.jpg",
+                    "image-width": "199",
+                    "image-height": "54",
+                    "title": "Town and Country Landscapes",
+                    "link": "http://townandcountrylandscapes.co.uk",
+                    "link-text": "www.TownAndCountryLandscapes.co.uk",
+                    "position": "WebsitesByLime - Developer",
+                    "description": "<p>Based on a simple design, this one has a custome image fader to showcase some of his work before and after.</p>",
+                    "skills": "HTML5, CSS3, LESS, PHP, javascript, jQuery, Bootstrap 3"
+                },
+                {
+                    "image": "/components/images/work-sites/claphamholmefarm.png",
+                    "image-placeholder":"/components/images/work-sites/claphamholmefarm-placeholder.jpg",
+                    "image-width": "200",
+                    "image-height": "43",
+                    "title": "Clapham Holme Farm",
+                    "link": "http://www.claphamholmefarm.co.uk/",
+                    "link-text": "www.ClaphamHolmeFarm.co.uk",
+                    "position": "WebsitesByLime - Developer",
+                    "description": "<p>This site was based on a template which has been heavily modified. Added custom Bootstrap controls to seperate the diffrent galleries and show or hide to suit. Added custom Bootstrap controls to seperate the diffrent galleries and show or hide to suit. A custom image thumnail generator was included to make small thumnail images for the gallery. This improves page loading times.</p>",
+                    "skills": "HTML5, CSS3, LESS, PHP, javascript, jQuery, Bootstrap 4"
+                }
+            ]
+        } 
     ],
     "skills": [
         {

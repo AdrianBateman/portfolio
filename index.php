@@ -66,16 +66,18 @@ echo '</div>
  *
  **********************/
 
-echo '<div class="js-workArticle work__wrapper margin-top-lg">';
-
+echo '<div class="js-workArticle work__wrapper margin-top-lg">
+        <h2 class="text--center margin-bottom-sm">Work</h2>';
 foreach ($jsonData['work'] as $key) {
     echo '
     <div class="work-card margin-bottom-md">
 
-        <h2 class="work-card__title text--center margin-bottom-sm">'.$key['title'].'<br><small><a href="'.$key['link'].'" target="_blank" rel="noopener" title="Dreams.co.uk">'.$key['link-text'].'</a></small></h2>
+        <h2 class="work-card__title text--center margin-bottom-sm">'.$key['title'].'<br><small><a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'">'.$key['link-text'].'</a></small></h2>
 
         <div class="work-card__image-wrapper text--center margin-bottom-sm">
-            <img src="'.$key['image-placeholder'].'" width="'.$key['image-width'].'" height="'.$key['image-height'].'" class="work-card__image lazy" data-src="'.$key['image'].'" data-srcset="'.$key['image'].'">
+            <a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'">
+                <img src="'.$key['image-placeholder'].'" width="'.$key['image-width'].'" height="'.$key['image-height'].'" class="work-card__image lazy" data-src="'.$key['image'].'" data-srcset="'.$key['image'].'">
+            </a>
         </div>
 
         <div class="work-card__text-wrapper">
@@ -84,6 +86,35 @@ foreach ($jsonData['work'] as $key) {
 
     </div>
     ';
+
+    if ($key['sites-created']){
+        echo '<div class="work-card-examples__wrapper">';
+        
+        foreach($key['sites-created'] as $value){
+            echo '
+                <div class="work-card-examples">
+                    <div class="work-card margin-bottom-md">
+
+                        <h2 class="work-card__title text--center margin-bottom-sm">'.$value['title'].'<br><small><a href="'.$value['link'].'" target="_blank" rel="noopener" title="'.$value['title'].'">'.$value['link-text'].'</a></small></h2>
+                
+                        <div class="work-card__image-wrapper text--center margin-bottom-sm">
+                            <a href="'.$value['link'].'" target="_blank" rel="noopener" title="'.$value['title'].'">
+                                <img src="'.$value['image-placeholder'].'" width="'.$value['image-width'].'" height="'.$value['image-height'].'" class="work-card__image lazy" data-src="'.$value['image'].'" data-srcset="'.$value['image'].'">
+                            </a>
+                        </div>
+                
+                        <div class="work-card__text-wrapper">
+                            '.$value['description'].'
+                            <p>Skills: '.$value['skills'].'</p>
+                        </div>
+        
+                    </div>
+                </div>
+            ';    
+        }
+
+        echo '</div>';
+    }
 }
 
 echo '</div>';
