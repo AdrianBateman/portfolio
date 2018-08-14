@@ -32,10 +32,15 @@
 </head>
 
 <body>
-<a href="/" class="js-TopLinkTo header__wrapper margin-top-sm">
-  <h1 class="header__title">Adrian Bateman</h1>
-  <h2 class="header__text">Website Developer</h2>
-</a>
+<div class="js-TopLinkTo header__wrapper">
+    <div class="header__image-wrapper text--center">
+        <img src="components/images/icon/logo.svg" width="117" height="150" alt="A-Bateman Logo" title="A-Bateman logo" class="header__logo"> 
+    </div>
+    <div class="header__text-wrapper">
+        <h1 class="header__text header--title">Adrian Bateman</h1>
+        <h2 class="header__text">Website Developer</h2>
+    </div>
+</div>
 
 <?php  
     include('./components/blocks/global-menu.php');

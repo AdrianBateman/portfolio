@@ -1,4 +1,4 @@
-<div class="navigation__wrapper margin-top-sm">
+<div class="navigation__wrapper">
   <div class="js-homeLink navigation__item navigation--active">Home</div>
   <div class="js-languagesLink navigation__item">Languages</div>
   <div class="js-workLink navigation__item">Work</div>

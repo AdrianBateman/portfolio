@@ -39,7 +39,7 @@ foreach ($jsonData['languages'] as $key) {
     $i = 0;
     while ($i++ < $key['competency'])
     {
-        $starImages .= '<img src="components/images/star.svg" >'; 
+        $starImages .= '<img src="components/images/star.svg" alt="A yellow star" >'; 
     }
 
     echo '
@@ -138,7 +138,7 @@ foreach ($jsonData['skills'] as $key) {
     $i = 0;
     while ($i++ < $key['competency'])
     {
-        $starImages .= '<img src="components/images/star.svg" >'; 
+        $starImages .= '<img src="components/images/star.svg" alt="A yellow star">'; 
     }
 
     echo '
