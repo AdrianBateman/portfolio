@@ -27,11 +27,11 @@ $jsonData = $jsonObj->get_jsonArr();
  *
  *************************************/
 
-echo '<div class="js-languagesArticle language__wrapper margin-top-md">
+echo '<div class="js-languagesArticle language__wrapper">
         
-        <h2 class="text--center margin-bottom-sm">Languages</h2>
+        <h2 class="text--center color--white">Languages</h2>
 
-        <div class="language__inner-wrapper">';
+        <div class="language__inner-wrapper color-light">';
 
 
 foreach ($jsonData['languages'] as $key) {
@@ -52,7 +52,8 @@ foreach ($jsonData['languages'] as $key) {
                 </picture>
                 <div class="language__text-wrapper text--left">
                     <h3 class="language__title">' . $key['title'] . '</h3>
-                    <p>' . $starImages . '</p>
+                    <p class="language__text">' . $key['url-short'] . '</p>
+                    <div>' . $starImages . '</div>
                 </div>
             </a>';
 }
@@ -66,25 +67,28 @@ echo '</div>
  *
  **********************/
 
-echo '<div class="js-workArticle work__wrapper margin-top-lg">
-        <h2 class="text--center margin-bottom-sm">Work</h2>';
-foreach ($jsonData['work'] as $key) {
+echo '<div class="work">
+        <div class="js-workArticle work__wrapper">';
+
+foreach ($jsonData['work'] as $key) 
+{
     echo '
-    <div class="work-card margin-bottom-md">
+        <div class="work-card margin-bottom-md">
+            <div class="work-card__image-wrapper text--center order--'.$key['sort-order'].'" >
+                <a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'">
+                    <img src="/components/images/nexus4.png" width="300" height="568" alt="Mobile phone image frame" class="work-card__image-frame">
+                    <img src="'.$key['image-placeholder'].'" width="'.$key['image-width'].'" height="'.$key['image-height'].'" class="work-card__image lazy" data-src="'.$key['image'].'" data-srcset="'.$key['image'].'" alt="'.$key['title'].'">
+                </a>
+            </div>
 
-        <h2 class="work-card__title text--center margin-bottom-sm">'.$key['title'].'<br><small><a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'">'.$key['link-text'].'</a></small></h2>
+            <div class="work-card__text-wrapper align--'.$key['text-direction'].'">
+                <h2 class="work-card__title margin-bottom-sm">'.$key['title'].'</h2>
+                <a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'" class="work-card__title--small ">'.$key['link-text'].'</a>
 
-        <div class="work-card__image-wrapper text--center margin-bottom-sm">
-            <a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'">
-                <img src="'.$key['image-placeholder'].'" width="'.$key['image-width'].'" height="'.$key['image-height'].'" class="work-card__image lazy" data-src="'.$key['image'].'" data-srcset="'.$key['image'].'">
-            </a>
+                '.$key['description'].'
+            </div>
+
         </div>
-
-        <div class="work-card__text-wrapper">
-            '.$key['description'].'
-        </div>
-
-    </div>
     ';
 
     if ($key['sites-created']){
@@ -93,22 +97,19 @@ foreach ($jsonData['work'] as $key) {
         foreach($key['sites-created'] as $value){
             echo '
                 <div class="work-card-examples">
-                    <div class="work-card margin-bottom-md">
-
-                        <h2 class="work-card__title text--center margin-bottom-sm">'.$value['title'].'<br><small><a href="'.$value['link'].'" target="_blank" rel="noopener" title="'.$value['title'].'">'.$value['link-text'].'</a></small></h2>
-                
-                        <div class="work-card__image-wrapper text--center margin-bottom-sm">
+                        <div class="work-card-examples__image-wrapper text--center order--'.$value['sort-order'].'">
                             <a href="'.$value['link'].'" target="_blank" rel="noopener" title="'.$value['title'].'">
-                                <img src="'.$value['image-placeholder'].'" width="'.$value['image-width'].'" height="'.$value['image-height'].'" class="work-card__image lazy" data-src="'.$value['image'].'" data-srcset="'.$value['image'].'">
+                                <img src="'.$value['image-placeholder'].'" width="'.$value['image-width'].'" height="'.$value['image-height'].'" class="work-card-examples__image lazy" data-src="'.$value['image'].'" data-srcset="'.$value['image'].'"  alt="'.$value['title'].'">
                             </a>
                         </div>
                 
-                        <div class="work-card__text-wrapper">
+                        <div class="work-card-examples__text-wrapper align--'.$value['text-direction'].' color--light"">
+                            <h2 class="work-card__title color--white">'.$value['title'].'</h2>
+                            <a href="'.$value['link'].'" target="_blank" rel="noopener" title="'.$value['title'].'" class="work-card__title--small color--light">'.$value['link-text'].'</a>
                             '.$value['description'].'
                             <p>Skills: '.$value['skills'].'</p>
+                            <hr class="work-card-examples__divider">
                         </div>
-        
-                    </div>
                 </div>
             ';    
         }
@@ -117,7 +118,8 @@ foreach ($jsonData['work'] as $key) {
     }
 }
 
-echo '</div>';
+echo '</div>
+</div>';
 
 
 /**********************
@@ -126,14 +128,15 @@ echo '</div>';
  *
  **********************/
 
-echo '<div class="js-skillsArticle language__wrapper margin-top-lg">
+echo '<div class="js-skillsArticle language__wrapper skills__wrapper">
         
         <h2 class="text--center margin-bottom-sm">Skills</h2>
 
         <div class="language__inner-wrapper">';
 
 
-foreach ($jsonData['skills'] as $key) {
+foreach ($jsonData['skills'] as $key) 
+{
     $starImages = "";
     $i = 0;
     while ($i++ < $key['competency'])
