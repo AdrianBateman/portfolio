@@ -166,6 +166,7 @@
     ],
     "skills": [{
             "url": "https://www.ampproject.org/",
+            "url-short": "www.ampproject.org",
             "title": "Google AMP",
             "image": "/components/images/logos/ampproject.png",
             "image-webp": "",
@@ -176,6 +177,7 @@
         },
         {
             "url": "https://git-scm.com/",
+            "url-short": "www.git-scm.com",
             "title": "Git hub",
             "image": "/components/images/logos/github.png",
             "image-webp": "/components/images/logos/github.webp",
@@ -186,6 +188,7 @@
         },
         {
             "url": "https://getbootstrap.com/",
+            "url-short": "www.getbootstrap.com",
             "title": "Bootstrap 3/4",
             "image": "/components/images/logos/bootstrap.png",
             "image-webp": "",
@@ -196,6 +199,7 @@
         },
         {
             "url": "https://amplience.com/",
+            "url-short": "www.amplience.com",
             "title": "Amplience",
             "image": "/components/images/logos/amplience.png",
             "image-webp": "/components/images/logos/amplience.webp",
@@ -206,6 +210,7 @@
         },
         {
             "url": "https://www.magento.com/",
+            "url-short": "www.magento.com",
             "title": "Magento",
             "image": "/components/images/logos/magento.png",
             "image-webp": "",

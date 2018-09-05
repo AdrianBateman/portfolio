@@ -19,9 +19,6 @@
     <link rel="icon" href="/components/images/icon/a-bateman-icon.ico" type="image/x-icon" />
     <link rel="shortcut icon" href="/components/images/icon/a-bateman-icon.ico" type="image/x-icon" />
 
-    <!-- manifest file -->
-    <link rel="manifest" href="/manifest.json">
- 
     <!-- Style -->
     <style type="text/css">
         <?php  
