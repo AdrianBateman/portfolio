@@ -127,14 +127,12 @@ echo '</div>
  *  skills section
  *
  **********************/
+?>
+<div class="js-skillsArticle language__wrapper skills__wrapper">
+    <h2 class="text--center color--white">Skills</h2>
+    <div class="language__inner-wrapper color--light">
 
-echo '<div class="js-skillsArticle language__wrapper skills__wrapper">
-        
-        <h2 class="text--center color--white">Skills</h2>
-
-        <div class="language__inner-wrapper color--light">';
-
-
+<?php
 foreach ($jsonData['skills'] as $key) 
 {
     $starImages = "";
@@ -160,72 +158,67 @@ foreach ($jsonData['skills'] as $key)
             </a>';
 }
 
-echo '</div>
-    </div>';
-
-
-echo '</div>';
-
-
-/**********************
- * 
- *  hobbies section
- *
- **********************/
-
-echo '<div class="js-hobbiesArticle language__wrapper">
-        
-        <h2 class="text--center margin-bottom-sm color--white">Hobbies</h2>
-        <div class="work-card-examples">
-            <div class="work-card-examples__image-wrapper text--center">
-                <img src="/components/images/art/natural_healing_logo_by_abateman1982-400.jpg" 
-                    alt="Natural Healing Logo"
-                    width="400"
-                    height="220"
-                    class="art-image">
-            </div>
-            <div class="work-card-examples__text-wrapper align--center color--light">
-                <img src="/components/images/art/corvette_z06_line_art_by_abateman1982-400.png" 
-                    alt="Corvette Z06"
-                    width="400"
-                    height="283"
-                    class="art-image">
-            </div>
+?>
         </div>
-        <div class="work-card-examples">
-            <div class="work-card-examples__image-wrapper text--center order--1">
-                <img src="/components/images/art/AlphaCleanLogo.png" 
-                    alt="Alpha Cleaning logo"
-                    width="400"
-                    height="123"
-                    class="art-image">
-            </div>
-            <div class="work-card-examples__text-wrapper align--left color--light">
-                <img src="/components/images/art/mugen_civic_typer_by_abateman1982-400.png" 
-                    alt="Mugen Civic TypeR"
-                    width="400"
-                    height="283"
-                    class="art-image">
-            </div>
-        </div>
-        <div class="work-card-examples">
-            <div class="work-card-examples__image-wrapper text--center">
-                <img src="/components/images/art/STBType.png" 
-                alt="STBType Application"
-                width="300"
-                height="339"
+    </div>
+</div>
+
+
+
+<div class="js-hobbiesArticle language__wrapper">
+    <h2 class="text--center margin-bottom-sm color--white">Hobbies</h2>
+    <div class="work-card-examples">
+        <div class="work-card-examples__image-wrapper text--center">
+            <img src="/components/images/art/natural_healing_logo_by_abateman1982-400.jpg" 
+                alt="Natural Healing Logo"
+                width="400"
+                height="220"
                 class="art-image">
-            </div>
-            <div class="work-card-examples__text-wrapper align--left color--light">
-                <h2>STB Type</h2>    
-
-                <p>I created this application whilst working for QubeGB. I found it time consuming to continue looking through the vast table on paper to find the specific type of equipment by looking for a bar-code pattern.</p>
-
-                <p>What you do is to simply scan the bar-code and it will search it\'s database, returning the type of STB for my paperwork. This has vastly improved my productivity.</p>
-            </div>
         </div>
+        <div class="work-card-examples__text-wrapper align--center color--light">
+            <img src="/components/images/art/corvette_z06_line_art_by_abateman1982-400.png" 
+                alt="Corvette Z06"
+                width="400"
+                height="283"
+                class="art-image">
+        </div>
+    </div>
+    <div class="work-card-examples">
+        <div class="work-card-examples__image-wrapper text--center order--1">
+            <img src="/components/images/art/AlphaCleanLogo.png" 
+                alt="Alpha Cleaning logo"
+                width="400"
+                height="123"
+                class="art-image">
+        </div>
+        <div class="work-card-examples__text-wrapper align--left color--light">
+            <img src="/components/images/art/mugen_civic_typer_by_abateman1982-400.png" 
+                alt="Mugen Civic TypeR"
+                width="400"
+                height="283"
+                class="art-image">
+        </div>
+    </div>
+    <div class="work-card-examples">
+        <div class="work-card-examples__image-wrapper text--center">
+            <img src="/components/images/art/STBType.png" 
+            alt="STBType Application"
+            width="300"
+            height="339"
+            class="art-image">
+        </div>
+        <div class="work-card-examples__text-wrapper align--left color--light">
+            <h2>STB Type</h2>    
 
-    </div>';
+            <p>I created this application whilst working for QubeGB. I found it time consuming to continue looking through the vast table on paper to find the specific type of equipment by looking for a bar-code pattern.</p>
+
+            <p>What you do is to simply scan the bar-code and it will search it's database, returning the type of STB for my paperwork. This has vastly improved my productivity.</p>
+        </div>
+    </div>
+
+</div>
+
+<?php
 
 
 /**********************
