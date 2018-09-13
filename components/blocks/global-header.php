@@ -35,6 +35,14 @@
 ?>
 
 <div class="js-TopLinkTo header__wrapper">
+    <picture>
+        <source media="(max-width: 699px)" srcset="/components/images/backgrounds/halfwayBackground-720.webp" type="image/webp">
+        <source media="(max-width: 699px)" srcset="/components/images/backgrounds/halfwayBackground-720.jpg" type="image/jpeg"> 
+        <source media="(min-width: 700px)" srcset="/components/images/backgrounds/halfwayBackground-1152.webp" type="image/webp">
+        <source media="(min-width: 700px)"srcset="/components/images/backgrounds/halfwayBackground-1152.jpg" type="image/jpeg"> 
+        <img src="/components/images/backgrounds/halfwayBackground-1152.jpg" alt="Adrian Bateman's Portfolio" class="background-image">
+    </picture>
+    
     <div class="column header__logo-wrapper text--center">
         <h1 class="header__text header--title">Adrian Bateman</h1>
         <h2 class="header__text">Website Developer</h2>

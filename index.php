@@ -27,7 +27,7 @@ $jsonData = $jsonObj->get_jsonArr();
  *
  *************************************/
 
-echo '<div class="js-languagesArticle language__wrapper">
+echo '<div class="js-languagesArticle language__wrapper background--black">
         
         <h2 class="text--center color--white">Languages</h2>
 
@@ -129,7 +129,17 @@ echo '</div>
  **********************/
 ?>
 <div class="js-skillsArticle language__wrapper skills__wrapper">
+    
     <h2 class="text--center color--white">Skills</h2>
+    
+    <picture>
+        <source media="(max-width: 699px)" srcset="/components/images/backgrounds/header-background-720.webp" type="image/webp">
+        <source media="(max-width: 699px)" srcset="/components/images/backgrounds/header-background-720.jpg" type="image/jpeg"> 
+        <source media="(min-width: 700px)" srcset="/components/images/backgrounds/header-background-1350.webp" type="image/webp">
+        <source media="(min-width: 700px)"srcset="/components/images/backgrounds/header-background-1350.jpg" type="image/jpeg"> 
+        <img src="/components/images/backgrounds/header-background-1350.jpg" alt="Adrian Bateman's Portfolio" class="background-image">
+    </picture>
+
     <div class="language__inner-wrapper color--light">
 
 <?php
@@ -165,17 +175,18 @@ foreach ($jsonData['skills'] as $key)
 
 
 
-<div class="js-hobbiesArticle language__wrapper">
-    <h2 class="text--center margin-bottom-sm color--white">Hobbies</h2>
+<div class="js-hobbiesArticle hobbies__wrapper">
+    <h2 class="text--center">Hobbies</h2>
+    <h3>Art</h3>
     <div class="work-card-examples">
-        <div class="work-card-examples__image-wrapper text--center">
+        <div class="work-card-examples__image-wrapper text--center art-card">
             <img src="/components/images/art/natural_healing_logo_by_abateman1982-400.jpg" 
                 alt="Natural Healing Logo"
                 width="400"
                 height="220"
                 class="art-image">
         </div>
-        <div class="work-card-examples__text-wrapper align--center color--light">
+        <div class="work-card-examples__text-wrapper align--center color--light art-card">
             <img src="/components/images/art/corvette_z06_line_art_by_abateman1982-400.png" 
                 alt="Corvette Z06"
                 width="400"
@@ -184,14 +195,14 @@ foreach ($jsonData['skills'] as $key)
         </div>
     </div>
     <div class="work-card-examples">
-        <div class="work-card-examples__image-wrapper text--center order--1">
+        <div class="work-card-examples__image-wrapper text--center order--1 art-card">
             <img src="/components/images/art/AlphaCleanLogo.png" 
                 alt="Alpha Cleaning logo"
                 width="400"
                 height="123"
                 class="art-image">
         </div>
-        <div class="work-card-examples__text-wrapper align--left color--light">
+        <div class="work-card-examples__text-wrapper align--left color--light art-card">
             <img src="/components/images/art/mugen_civic_typer_by_abateman1982-400.png" 
                 alt="Mugen Civic TypeR"
                 width="400"
@@ -199,13 +210,16 @@ foreach ($jsonData['skills'] as $key)
                 class="art-image">
         </div>
     </div>
+
+    <h3>Mobile Apps</h3>
     <div class="work-card-examples">
         <div class="work-card-examples__image-wrapper text--center">
             <img src="/components/images/art/STBType.png" 
             alt="STBType Application"
             width="300"
             height="339"
-            class="art-image">
+            class="art-image"
+            style="max-width:300px;">
         </div>
         <div class="work-card-examples__text-wrapper align--left color--light">
             <h2>STB Type</h2>    
@@ -218,25 +232,60 @@ foreach ($jsonData['skills'] as $key)
 
 </div>
 
-<?php
-
-
-/**********************
- * 
- *  contact section
- *
- **********************/
-
-echo '<div class="js-contactArticle language__wrapper margin-top-lg">
-        
+<div class="js-contactArticle language__wrapper">
     <h2 class="text--center margin-bottom-sm color--white">Contact</h2>
 
-    <div style="display: block;width: 80%;margin: auto;height: 500px;border:1px solid black;"></div>
+<?php
+  if(isset($_POST['submit'])){
+    $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
+    $subject = htmlspecialchars(stripslashes(trim($_POST['subject'])));
+    $email = htmlspecialchars(stripslashes(trim($_POST['email'])));
+    $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
+    if(!preg_match("/^[A-Za-z .'-]+$/", $name)){
+      $name_error = 'Invalid name';
+    }
+    if(!preg_match("/^[A-Za-z .'-]+$/", $subject)){
+      $subject_error = 'Invalid subject';
+    }
+    if(!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)){
+      $email_error = 'Invalid email';
+    }
+    if(strlen($message) === 0){
+      $message_error = 'Your message should not be empty';
+    }
+  }
+?>
 
-</div>';
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
+  <label for="name">Name:</label><br>
+  <input type="text" name="name">
+  <p><?php if(isset($name_error)) echo $name_error; ?></p>
+  <label for="subject">Subject:</label><br>
+  <input type="text" name="subject">
+  <p><?php if(isset($subject_error)) echo $subject_error; ?></p>
+  <label for="email">Email:</label><br>
+  <input type="text" name="email">
+  <p><?php if(isset($email_error)) echo $email_error; ?></p>
+  <label for="message">Message:</label><br>
+  <textarea name="message"></textarea>
+  <p><?php if(isset($message_error)) echo $message_error; ?></p>
+  <input type="submit" name="submit" value="Submit">
+  <?php 
+    if(isset($_POST['submit']) && !isset($name_error) && !isset($subject_error) && !isset($email_error) && !isset($message_error)){
+      $to = 'youremail@addres.com'; // edit here
+      $body = " Name: $name\n E-mail: $email\n Message:\n $message";
+      if(mail($to, $subject, $body)){
+        echo '<p style="color: green">Message sent</p>';
+      }else{
+        echo '<p>Error occurred, please try again later</p>';
+      }
+    }
+  ?>
+</form>
 
+</div>
 
-
+<?php
 //  include footer
 include './components/blocks/global-footer.php';
 ?>

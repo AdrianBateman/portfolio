@@ -1,0 +1,619 @@
+{
+  "productData": {
+    "code": "254-00047",
+    "name": "Deacon Fabric Upholstered Ottoman Bed Frame",
+    "url": "/deacon-fabric-upholstered-ottoman-bed-frame/p/254-00047",
+    "description": "<p><strong>Specifications:</strong></p><ul>\t<li>Beige fabric upholstered frame</li>\t<li>High headboard button detailing</li>\t<li>Sprung slats provided as standard</li></ul><p>The Deacon is a bold but simple bed frame, upholstered in a beige soft touch fabric that will suit any room colouring.</p><p>The button detailing through the head end gives this frame a plush and elegant exterior.</p><p>This frame provides the option of sprung slats, offering you higher durability and support.</p><p><strong>Assembly details:</strong></p><ul>\t<li>Instructions download: <a href=\"/Webfiles/Assembly/254-00045_deacon-ottoman-assembly.pdf\">click here</a></li>\t<li>Build time: 2 people | 1 hour</li>\t<li>Let our experts assemble your bed - select this service at the checkout</li></ul>",
+    "purchasable": true,
+    "stock": {
+      "stockLevelStatus": {
+        "code": "inStock",
+        "type": "StockLevelStatus"
+      }
+    },
+    "availableForPickup": false,
+    "numberOfReviews": 0,
+    "summary": "",
+    "price": {
+      "currencyIso": "GBP",
+      "value": 549,
+      "priceType": "BUY",
+      "formattedValue": "£549",
+      "formattedPriceWithoutCurrencySymbol": "549",
+      "startDate": 1483228800000,
+      "endDate": 253370764800000
+    },
+    "baseProduct": "254-00047-configurable",
+    "images": [
+      {
+        "imageType": "GALLERY",
+        "format": "product",
+        "url": "https://i1.adis.ws/i/dreams/254-00047_main-shot_01_deacon-upholstered-ottoman-bed-frame",
+        "altText": "Deacon Beige Fabric Upholstered Ottoman Bed Frame",
+        "galleryIndex": 0
+      },
+      {
+        "imageType": "GALLERY",
+        "format": "product",
+        "url": "https://i1.adis.ws/i/dreams/254-00047_detail_01_deacon-upholstered-ottoman-bed-frame",
+        "altText": "Deacon Beige Fabric Upholstered Ottoman Bed Frame",
+        "galleryIndex": 1
+      },
+      {
+        "imageType": "GALLERY",
+        "format": "product",
+        "url": "https://i1.adis.ws/i/dreams/254-00047_detail_03_deacon-upholstered-ottoman-bed-frame",
+        "altText": "Deacon Beige Fabric Upholstered Ottoman Bed Frame",
+        "galleryIndex": 2
+      }
+    ],
+    "categories": [
+      {
+        "code": "4_6_DOUBLE",
+        "name": "4'6 Double",
+        "url": "/b2c-size/4-6-DOUBLE",
+        "parentCategoryName": "Size",
+        "sequence": 6
+      }
+    ],
+    "reviews": [],
+    "classifications": [
+      {
+        "code": "BED",
+        "features": [
+          {
+            "code": "DreamsClassification/1.0/BED.headend_cm_a",
+            "name": "A - Head-end",
+            "range": false,
+            "comparable": true,
+            "featureUnit": {
+              "symbol": "cm",
+              "unitType": "distance"
+            },
+            "featureValues": [
+              {
+                "value": "134"
+              }
+            ]
+          },
+          {
+            "code": "DreamsClassification/1.0/BED.length_in_b",
+            "name": "B - Length",
+            "range": false,
+            "comparable": true,
+            "featureUnit": {
+              "symbol": "inch",
+              "unitType": "distance"
+            },
+            "featureValues": [
+              {
+                "value": "81"
+              }
+            ]
+          },
+          {
+            "code": "DreamsClassification/1.0/BED.length_cm_b",
+            "name": "B - Length",
+            "range": false,
+            "comparable": true,
+            "featureUnit": {
+              "symbol": "cm",
+              "unitType": "distance"
+            },
+            "featureValues": [
+              {
+                "value": "207"
+              }
+            ]
+          },
+          {
+            "code": "DreamsClassification/1.0/BED.width_cm_c",
+            "name": "C - Width",
+            "range": false,
+            "comparable": true,
+            "featureUnit": {
+              "symbol": "cm",
+              "unitType": "distance"
+            },
+            "featureValues": [
+              {
+                "value": "158"
+              }
+            ]
+          },
+          {
+            "code": "DreamsClassification/1.0/BED.headend_in_a",
+            "name": "A - Head-end",
+            "range": false,
+            "comparable": true,
+            "featureUnit": {
+              "symbol": "inch",
+              "unitType": "distance"
+            },
+            "featureValues": [
+              {
+                "value": "53"
+              }
+            ]
+          },
+          {
+            "code": "DreamsClassification/1.0/BED.width_in_c",
+            "name": "C - Width",
+            "range": false,
+            "comparable": true,
+            "featureUnit": {
+              "symbol": "inch",
+              "unitType": "distance"
+            },
+            "featureValues": [
+              {
+                "value": "62"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "code": "BASE",
+        "features": [
+          {
+            "code": "DreamsClassification/1.0/BASE.base",
+            "range": false,
+            "comparable": true,
+            "featureValues": [
+              {
+                "value": "Ottoman"
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "baseOptions": [
+      {
+        "variantType": "GenericVariantProduct",
+        "options": [
+          {
+            "code": "256-00160",
+            "stock": {
+              "stockLevelStatus": {
+                "code": "inStock",
+                "type": "StockLevelStatus"
+              }
+            },
+            "url": "/deacon-fabric-upholstered-ottoman-bed-frame/p/256-00160",
+            "priceData": {
+              "currencyIso": "GBP",
+              "value": 749,
+              "priceType": "BUY",
+              "formattedValue": "£749",
+              "formattedPriceWithoutCurrencySymbol": "749"
+            },
+            "variantOptionQualifiers": []
+          },
+          {
+            "code": "255-00262",
+            "stock": {
+              "stockLevelStatus": {
+                "code": "inStock",
+                "type": "StockLevelStatus"
+              }
+            },
+            "url": "/deacon-fabric-upholstered-ottoman-bed-frame/p/255-00262",
+            "priceData": {
+              "currencyIso": "GBP",
+              "value": 649,
+              "priceType": "BUY",
+              "formattedValue": "£649",
+              "formattedPriceWithoutCurrencySymbol": "649"
+            },
+            "variantOptionQualifiers": []
+          },
+          {
+            "code": "254-00047",
+            "stock": {
+              "stockLevelStatus": {
+                "code": "inStock",
+                "type": "StockLevelStatus"
+              }
+            },
+            "url": "/deacon-fabric-upholstered-ottoman-bed-frame/p/254-00047",
+            "priceData": {
+              "currencyIso": "GBP",
+              "value": 549,
+              "priceType": "BUY",
+              "formattedValue": "£549",
+              "formattedPriceWithoutCurrencySymbol": "549"
+            },
+            "variantOptionQualifiers": []
+          }
+        ],
+        "selected": {
+          "code": "254-00047",
+          "stock": {
+            "stockLevelStatus": {
+              "code": "inStock",
+              "type": "StockLevelStatus"
+            }
+          },
+          "url": "/deacon-fabric-upholstered-ottoman-bed-frame/p/254-00047",
+          "priceData": {
+            "currencyIso": "GBP",
+            "value": 549,
+            "priceType": "BUY",
+            "formattedValue": "£549",
+            "formattedPriceWithoutCurrencySymbol": "549"
+          },
+          "variantOptionQualifiers": []
+        }
+      }
+    ],
+    "variantMatrix": [
+      {
+        "variantValueCategory": {
+          "name": "4'6 Double",
+          "sequence": 6,
+          "categoryCode": "4_6_DOUBLE"
+        },
+        "parentVariantCategory": {
+          "name": "Size",
+          "hasImage": false,
+          "priority": 0,
+          "categoryCode": "b2c_size"
+        },
+        "variantOption": {
+          "code": "254-00047",
+          "url": "/deacon-fabric-upholstered-ottoman-bed-frame/p/254-00047",
+          "variantOptionQualifiers": [
+            {
+              "image": {}
+            }
+          ]
+        },
+        "elements": [],
+        "isLeaf": true
+      },
+      {
+        "variantValueCategory": {
+          "name": "5'0 King",
+          "sequence": 7,
+          "categoryCode": "5_0_KING"
+        },
+        "parentVariantCategory": {
+          "name": "Size",
+          "hasImage": false,
+          "priority": 0,
+          "categoryCode": "b2c_size"
+        },
+        "variantOption": {
+          "code": "255-00262",
+          "url": "/deacon-fabric-upholstered-ottoman-bed-frame/p/255-00262",
+          "variantOptionQualifiers": [
+            {
+              "image": {}
+            }
+          ]
+        },
+        "elements": [],
+        "isLeaf": true
+      },
+      {
+        "variantValueCategory": {
+          "name": "6'0 Super king",
+          "sequence": 8,
+          "categoryCode": "6_0_SUPER_KING"
+        },
+        "parentVariantCategory": {
+          "name": "Size",
+          "hasImage": false,
+          "priority": 0,
+          "categoryCode": "b2c_size"
+        },
+        "variantOption": {
+          "code": "256-00160",
+          "url": "/deacon-fabric-upholstered-ottoman-bed-frame/p/256-00160",
+          "variantOptionQualifiers": [
+            {
+              "image": {}
+            }
+          ]
+        },
+        "elements": [],
+        "isLeaf": true
+      }
+    ],
+    "multidimensional": true,
+    "configurable": false,
+    "sizeVariantName": "4'6 Double",
+    "variantSelectorData": [
+      {
+        "categoryCode": "b2c_size",
+        "categoryName": "Size",
+        "varaintSelectorCategoryData": [
+          {
+            "categoryCodeValue": "4_6_DOUBLE",
+            "categoryCode": "4'6 Double",
+            "productUrl": "/deacon-fabric-upholstered-ottoman-bed-frame/p/254-00047",
+            "productCode": "254-00047"
+          },
+          {
+            "categoryCodeValue": "5_0_KING",
+            "categoryCode": "5'0 King",
+            "productUrl": "/deacon-fabric-upholstered-ottoman-bed-frame/p/255-00262",
+            "productCode": "255-00262"
+          },
+          {
+            "categoryCodeValue": "6_0_SUPER_KING",
+            "categoryCode": "6'0 Super king",
+            "productUrl": "/deacon-fabric-upholstered-ottoman-bed-frame/p/256-00160",
+            "productCode": "256-00160"
+          }
+        ]
+      }
+    ],
+    "addToShortList": false,
+    "carrierType": "DREAMS",
+    "stockDeliveryType": {
+      "code": "2",
+      "type": "StockDeliveryTypeEnum"
+    },
+    "was1": {
+      "currencyIso": "GBP",
+      "value": 699,
+      "priceType": "BUY",
+      "formattedValue": "£699",
+      "formattedPriceWithoutCurrencySymbol": "699"
+    },
+    "was2": {
+      "currencyIso": "GBP",
+      "value": 599,
+      "priceType": "BUY",
+      "formattedValue": "£599",
+      "formattedPriceWithoutCurrencySymbol": "599"
+    },
+    "highestWasPrice": {
+      "currencyIso": "GBP",
+      "value": 699,
+      "priceType": "BUY",
+      "formattedValue": "£699",
+      "formattedPriceWithoutCurrencySymbol": "699"
+    },
+    "wasPriceDiscount": {
+      "currencyIso": "GBP",
+      "value": 150,
+      "priceType": "BUY",
+      "formattedValue": "£150",
+      "formattedPriceWithoutCurrencySymbol": "150"
+    },
+    "selectedSizeVariantCode": "4_6_DOUBLE",
+    "selectedVariantSize": "4'6 Double",
+    "dimensions": {
+      "A - Head-end": {
+        "name": "A - Head-end",
+        "dimensionCmValue": "134",
+        "dimensionInchValue": "53"
+      },
+      "B - Length": {
+        "name": "B - Length",
+        "dimensionCmValue": "207",
+        "dimensionInchValue": "81",
+        "bedConfiguratorDisplay": "L - Length"
+      },
+      "C - Width": {
+        "name": "C - Width",
+        "dimensionCmValue": "158",
+        "dimensionInchValue": "62",
+        "bedConfiguratorDisplay": "W - Width"
+      }
+    },
+    "classificationType": "Bed Frames",
+    "color": "Natural",
+    "brand": "The Dreams Workshop",
+    "onlineOnly": false,
+    "ottoman": false,
+    "eligibleForFinance": true,
+    "productTypeCode": "BED",
+    "hasAssemblyReference": false,
+    "hasRecycleReference": false
+  },
+  "ifcAmount": {
+    "currencyIso": "GBP",
+    "value": 18.3,
+    "priceType": "BUY",
+    "formattedValue": "£18.30",
+    "formattedPriceWithoutCurrencySymbol": "18.30"
+  },
+  "products": [
+    {
+      "code": "251-00187",
+      "name": "Sana Fabric Upholstered Ottoman Bed Frame",
+      "url": "/sana-fabric-upholstered-ottoman-bed-frame/p/251-00187",
+      "purchasable": true,
+      "price": {
+        "currencyIso": "GBP",
+        "value": 399,
+        "priceType": "BUY",
+        "formattedValue": "£399",
+        "formattedPriceWithoutCurrencySymbol": "399",
+        "startDate": 1483228800000,
+        "endDate": 253370764800000
+      },
+      "baseProduct": "251-00187-configurable",
+      "images": [
+        {
+          "imageType": "PRIMARY",
+          "format": "product",
+          "url": "https://i1.adis.ws/i/dreams/251-00187_main-shot_01_sana-pearl-fabric-ottoman-bed-frame",
+          "altText": "Sana Pearl Fabric Ottoman Bed Frame"
+        },
+        {
+          "imageType": "PRIMARY",
+          "format": "thumbnail",
+          "url": "https://i1.adis.ws/i/dreams/251-00187_main-shot_01_sana-pearl-fabric-ottoman-bed-frame",
+          "altText": "Sana Pearl Fabric Ottoman Bed Frame"
+        },
+        {
+          "imageType": "PRIMARY",
+          "format": "cartIcon",
+          "url": "https://i1.adis.ws/i/dreams/251-00187_main-shot_01_sana-pearl-fabric-ottoman-bed-frame",
+          "altText": "Sana Pearl Fabric Ottoman Bed Frame"
+        }
+      ],
+      "baseOptions": [
+        {
+          "variantType": "GenericVariantProduct",
+          "selected": {
+            "code": "251-00187",
+            "stock": {
+              "stockLevelStatus": {
+                "code": "inStock",
+                "type": "StockLevelStatus"
+              }
+            },
+            "url": "/sana-fabric-upholstered-ottoman-bed-frame/p/251-00187",
+            "priceData": {
+              "currencyIso": "GBP",
+              "value": 399,
+              "priceType": "BUY",
+              "formattedValue": "£399",
+              "formattedPriceWithoutCurrencySymbol": "399"
+            },
+            "variantOptionQualifiers": []
+          }
+        }
+      ],
+      "configurable": false,
+      "firmnessAvailablityRange": "",
+      "reviewAvgRatingBazaarVoice": 4.6071,
+      "bazaarVoiceNoOfReviews": "28",
+      "sizeVariantName": "4'6 Double",
+      "addToShortList": false,
+      "carrierType": "DREAMS",
+      "stockDeliveryType": {
+        "code": "3",
+        "type": "StockDeliveryTypeEnum"
+      },
+      "was1": {
+        "currencyIso": "GBP",
+        "value": 449,
+        "priceType": "BUY",
+        "formattedValue": "£449",
+        "formattedPriceWithoutCurrencySymbol": "449"
+      },
+      "highestWasPrice": {
+        "currencyIso": "GBP",
+        "value": 449,
+        "priceType": "BUY",
+        "formattedValue": "£449",
+        "formattedPriceWithoutCurrencySymbol": "449"
+      },
+      "wasPriceDiscount": {
+        "currencyIso": "GBP",
+        "value": 50,
+        "priceType": "BUY",
+        "formattedValue": "£50",
+        "formattedPriceWithoutCurrencySymbol": "50"
+      },
+      "selectedSizeVariantCode": "4_6_DOUBLE",
+      "selectedVariantSize": "4'6 Double",
+      "classificationType": "Bed Frames",
+      "color": "Beige",
+      "brand": "The Dreams Workshop",
+      "onlineOnly": false,
+      "ottoman": false,
+      "productThumbnailImage": {
+        "imageType": "GALLERY",
+        "format": "thumbnail",
+        "url": "https://i1.adis.ws/i/dreams/251-00187_main-shot_01_sana-pearl-fabric-ottoman-bed-frame",
+        "altText": "Sana Pearl Fabric Ottoman Bed Frame",
+        "galleryIndex": 0
+      },
+      "productTypeCode": "BED"
+    },
+    {
+      "code": "251-00218",
+      "name": "Brussels Upholstered Bed Frame",
+      "url": "/brussels-upholstered-bed-frame/p/251-00218",
+      "purchasable": true,
+      "price": {
+        "currencyIso": "GBP",
+        "value": 699,
+        "priceType": "BUY",
+        "formattedValue": "£699",
+        "formattedPriceWithoutCurrencySymbol": "699",
+        "startDate": 1483228800000,
+        "endDate": 253370764800000
+      },
+      "baseProduct": "261-00388-configurable",
+      "images": [
+        {
+          "imageType": "PRIMARY",
+          "format": "product",
+          "url": "https://i1.adis.ws/i/dreams/251-00218_main-shot_01_brussels-natural-fabric-bed-frame",
+          "altText": "Brussels Natural Fabric Bed Frame"
+        },
+        {
+          "imageType": "PRIMARY",
+          "format": "thumbnail",
+          "url": "https://i1.adis.ws/i/dreams/251-00218_main-shot_01_brussels-natural-fabric-bed-frame",
+          "altText": "Brussels Natural Fabric Bed Frame"
+        },
+        {
+          "imageType": "PRIMARY",
+          "format": "cartIcon",
+          "url": "https://i1.adis.ws/i/dreams/251-00218_main-shot_01_brussels-natural-fabric-bed-frame",
+          "altText": "Brussels Natural Fabric Bed Frame"
+        }
+      ],
+      "baseOptions": [
+        {
+          "variantType": "GenericVariantProduct",
+          "selected": {
+            "code": "251-00218",
+            "stock": {
+              "stockLevelStatus": {
+                "code": "inStock",
+                "type": "StockLevelStatus"
+              }
+            },
+            "url": "/brussels-upholstered-bed-frame/p/251-00218",
+            "priceData": {
+              "currencyIso": "GBP",
+              "value": 699,
+              "priceType": "BUY",
+              "formattedValue": "£699",
+              "formattedPriceWithoutCurrencySymbol": "699"
+            },
+            "variantOptionQualifiers": []
+          }
+        }
+      ],
+      "configurable": false,
+      "firmnessAvailablityRange": "",
+      "reviewAvgRatingBazaarVoice": 4.375,
+      "bazaarVoiceNoOfReviews": "16",
+      "sizeVariantName": "4'6 Double",
+      "addToShortList": false,
+      "carrierType": "DREAMS",
+      "stockDeliveryType": {
+        "code": "2",
+        "type": "StockDeliveryTypeEnum"
+      },
+      "selectedSizeVariantCode": "4_6_DOUBLE",
+      "selectedVariantSize": "4'6 Double",
+      "classificationType": "Bed Frames",
+      "color": "Natural fabric",
+      "brand": "The Dreams Workshop",
+      "onlineOnly": false,
+      "ottoman": false,
+      "productThumbnailImage": {
+        "imageType": "GALLERY",
+        "format": "thumbnail",
+        "url": "https://i1.adis.ws/i/dreams/251-00218_main-shot_01_brussels-natural-fabric-bed-frame",
+        "altText": "Brussels Natural Fabric Bed Frame",
+        "galleryIndex": 0
+      },
+      "productTypeCode": "BED"
+    }
+  ]
+}
