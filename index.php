@@ -180,18 +180,22 @@ foreach ($jsonData['skills'] as $key)
     <h3>Art</h3>
     <div class="work-card-examples">
         <div class="work-card-examples__image-wrapper text--center art-card">
-            <img src="/components/images/art/natural_healing_logo_by_abateman1982-400.jpg" 
+            <img src="/components/images/art/natural_healing_logo_by_abateman1982-400-ph.jpg" 
+                data-src="/components/images/art/natural_healing_logo_by_abateman1982-400.jpg"
+                data-srcset="/components/images/art/natural_healing_logo_by_abateman1982-400.jpg"
                 alt="Natural Healing Logo"
                 width="400"
                 height="220"
-                class="art-image">
+                class="art-image lazy">
         </div>
         <div class="work-card-examples__text-wrapper align--center color--light art-card">
-            <img src="/components/images/art/corvette_z06_line_art_by_abateman1982-400.png" 
+            <img src="/components/images/art/corvette_z06_line_art_by_abateman1982-400-ph.png" 
+                data-src="/components/images/art/corvette_z06_line_art_by_abateman1982-400.png"
+                data-srcset="/components/images/art/corvette_z06_line_art_by_abateman1982-400.png"
                 alt="Corvette Z06"
                 width="400"
                 height="283"
-                class="art-image">
+                class="art-image lazy">
         </div>
     </div>
     <div class="work-card-examples">
@@ -203,22 +207,26 @@ foreach ($jsonData['skills'] as $key)
                 class="art-image">
         </div>
         <div class="work-card-examples__text-wrapper align--left color--light art-card">
-            <img src="/components/images/art/mugen_civic_typer_by_abateman1982-400.png" 
+            <img src="/components/images/art/mugen_civic_typer_by_abateman1982-400-ph.png" 
+                data-src="/components/images/art/mugen_civic_typer_by_abateman1982-400.png"
+                data-srcset="/components/images/art/mugen_civic_typer_by_abateman1982-400.png"
                 alt="Mugen Civic TypeR"
                 width="400"
                 height="283"
-                class="art-image">
+                class="art-image lazy">
         </div>
     </div>
 
     <h3>Mobile Apps</h3>
     <div class="work-card-examples">
         <div class="work-card-examples__image-wrapper text--center">
-            <img src="/components/images/art/STBType.png" 
+            <img src="/components/images/art/STBType-ph.png"
+            data-src="/components/images/art/STBType.png" 
+            data-srcset="/components/images/art/STBType.png" 
             alt="STBType Application"
             width="300"
             height="339"
-            class="art-image"
+            class="art-image lazy"
             style="max-width:300px;">
         </div>
         <div class="work-card-examples__text-wrapper align--left color--light">
