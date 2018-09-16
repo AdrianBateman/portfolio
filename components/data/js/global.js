@@ -131,3 +131,33 @@ document.addEventListener("scroll", function () {
     linkActive("js-hobbiesLink", "js-hobbiesArticle");
     linkActive("js-contactLink", "js-contactArticle");
 });
+
+window.onscroll=function(){changeMenu()}
+
+function changeMenu()
+{
+    var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+    var navigationWrapper = document.getElementsByClassName('js-navigation')[0];
+    var navigationItems = document.getElementsByClassName('navigation__item');
+
+    // At specifiv position do what you want 
+    if(scrollBarPosition <= 100) {
+
+        navigationWrapper.style.backgroundColor = 'transparent';
+        navigationWrapper.style.color = 'rgba(255,255,255,0.5)';
+
+        for (var i = 0; i < navigationItems.length; ++i) {
+            var item = navigationItems[i];  
+            item.classList.remove('navigation--active-below');
+        }
+    }
+    else {
+        navigationWrapper.style.backgroundColor = '#ffffff';
+        navigationWrapper.style.color = '#161616';
+
+        for (var i = 0; i < navigationItems.length; ++i) {
+            var item = navigationItems[i];  
+            item.classList.add('navigation--active-below');
+        }
+    }
+}
