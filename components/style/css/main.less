@@ -9,8 +9,6 @@
 @color-green: #0DFF76;
 @color-white: #ffffff;
 @box-shadow: 0 0 5px lighten(#000, 70%);
-// @import url('https://fonts.googleapis.com/css?family=Varela+Round');
-// @import url('https://fonts.googleapis.com/css?family=Nunito');
 @font-size-sm: 13px;
 @font-size-normal: 16px;
 @font-size-lg: 18px;
@@ -18,10 +16,16 @@
 * {
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
+@font-face {
+    font-family: "Nunito";
+    font-display: swap;
+}
+@font-face {
+    font-family: "Varela Round";
+    font-display: swap;
+}
 body {
     background-color: @color-white;
     color: @color-darkest-mint;
@@ -34,6 +38,11 @@ p {
     margin: 0 0 25px 0;
     line-height: 26px;
     font-size: @font-size-normal;
+}
+
+a {
+   color: #335553;
+   text-decoration: none;
 }
 
 .color--light {
@@ -93,7 +102,12 @@ p {
         order: 1;
     }
 }
-
+.skip-link {
+    font-size: 10px;
+    position: absolute;
+    top: 5px;
+    color: #fff;
+}
 .navigation {
     &__wrapper {
         position: fixed;
@@ -105,8 +119,6 @@ p {
         background-color: transparent;
         color: rgba(255, 255, 255, 0.5);
         z-index: 3;
-        -webkit-transition: background-color 500ms linear;
-        -ms-transition: background-color 500ms linear;
         transition: background-color 500ms linear;
     }
     &__item {
@@ -126,12 +138,12 @@ p {
         color: rgba(255, 255, 255, .75);
         &-below {
             &:hover {
-                color: #64a19d;
+                color: #335553;
             }
         }
         &.navigation--active-below {
-            color: #64a19d;
-            border-bottom: .25rem solid #64a19d;
+            color: #335553;
+            border-bottom: .25rem solid #335553;
         }
     }
     &--left {
@@ -261,7 +273,7 @@ p {
         &__title {
             &--small {
                 text-decoration: none;
-                color: #64a19d;
+                color: #77adaa;
             }
             @media only screen and (min-width: @screen-tab) {
                 width: 100%;
@@ -358,7 +370,7 @@ p {
             &__divider {
                 width: 200px;
                 margin: 0 auto;
-                border-color: #64a19d;
+                border-color: #335553;
             }
         }
     }
@@ -366,14 +378,14 @@ p {
 
 .align--left {
     @media only screen and (min-width: @screen-tab) {
-        border-left: 4px solid #64a19d;
+        border-left: 4px solid #335553;
         text-align: left;
     }
 }
 
 .align--right {
     @media only screen and (min-width: @screen-tab) {
-        border-right: 4px solid #64a19d;
+        border-right: 4px solid #335553;
         text-align: right;
     }
 }
@@ -392,6 +404,7 @@ p {
         & h3 {
             max-width: 960px;
             margin: 20px auto;
+            padding: 0 20px;
         }
     }
 }
@@ -404,4 +417,23 @@ p {
 }
 .art-card {
     margin-bottom: 60px;
+}
+
+.footer {
+    &__wrapper{
+        background-color: #161616;
+        color: rgba(255,255,255,0.5);
+        padding: 30px 0;
+    }
+    &__text {
+        max-width: 960px;
+        margin: 20px auto;
+        padding: 0 20px;
+        text-align: right;
+    }
+}
+
+.contact__table {
+    margin: 20px auto;
+    border-spacing: 10px;
 }

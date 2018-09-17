@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta name="description" content="Adrian Bateman, Website Developer, Full Stack Developer, Front End Developer, Back End Developer."/>
     <meta name="keywords" content="Website Developer, PHP, Javascript, Hybris, Amplience, CSS, HTML5, CSS3, OOPHP, Front End Developer, Back End Developer"/>
     <meta name="robots" content="INDEX,FOLLOW"/>
@@ -20,7 +19,7 @@
     <link rel="shortcut icon" href="/components/images/icon/a-bateman-icon.ico" type="image/x-icon" />
 
     <!-- Style -->
-    <style type="text/css">
+    <style>
         <?php  
             include ('./components/style/css/main.css');
         ?>
@@ -29,7 +28,6 @@
 </head>
 
 <body>
-
 <?php  
     include('./components/blocks/global-menu.php');
 ?>
@@ -39,7 +37,7 @@
         <source media="(max-width: 699px)" srcset="/components/images/backgrounds/halfwayBackground-720.webp" type="image/webp">
         <source media="(max-width: 699px)" srcset="/components/images/backgrounds/halfwayBackground-720.jpg" type="image/jpeg"> 
         <source media="(min-width: 700px)" srcset="/components/images/backgrounds/halfwayBackground-1152.webp" type="image/webp">
-        <source media="(min-width: 700px)"srcset="/components/images/backgrounds/halfwayBackground-1152.jpg" type="image/jpeg"> 
+        <source media="(min-width: 700px)" srcset="/components/images/backgrounds/halfwayBackground-1152.jpg" type="image/jpeg"> 
         <img src="/components/images/backgrounds/halfwayBackground-1152.jpg" alt="Adrian Bateman's Portfolio" class="background-image">
     </picture>
     

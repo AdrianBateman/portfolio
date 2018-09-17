@@ -27,7 +27,7 @@ $jsonData = $jsonObj->get_jsonArr();
  *
  *************************************/
 
-echo '<div class="js-languagesArticle language__wrapper background--black">
+echo '<div id="mainContent" class="js-languagesArticle language__wrapper background--black">
         
         <h2 class="text--center color--white">Languages</h2>
 
@@ -39,14 +39,19 @@ foreach ($jsonData['languages'] as $key) {
     $i = 0;
     while ($i++ < $key['competency'])
     {
-        $starImages .= '<img src="components/images/star.svg" alt="A yellow star" >'; 
+        $starImages .= '<img src="components/images/star.svg" alt="Star review '.$i.'" >'; 
+    }
+    
+    $imageWebp = "";
+    if ($key['image-webp'] != ""){
+        $imageWebp = '<source srcset="' . $key['image-webp'] . '" type="image/webp">';
     }
 
     echo '
             <a href="' . $key['url'] . '" target="_blank" rel="noopener" title="' . $key['title'] . '" class="language__item">
 
                 <picture class="width--40">
-                    <source srcset="' . $key['image-webp'] . '" type="image/webp">
+                    '.$imageWebp.'
                     <source srcset="' . $key['image'] . '" type="image/jpeg">
                     <img src="' . $key['image'] . '" width="' . $key['width'] . '" height="' . $key['height'] . '" alt="' . $key['alt'] . '" class="margin-bottom-sm">
                 </picture>
@@ -83,7 +88,7 @@ foreach ($jsonData['work'] as $key)
 
             <div class="work-card__text-wrapper align--'.$key['text-direction'].'">
                 <h2 class="work-card__title margin-bottom-sm">'.$key['title'].'</h2>
-                <a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'" class="work-card__title--small ">'.$key['link-text'].'</a>
+                <a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'" class="work-card__title--small" style="color:#335554;">'.$key['link-text'].'</a>
 
                 '.$key['description'].'
             </div>
@@ -103,7 +108,7 @@ foreach ($jsonData['work'] as $key)
                             </a>
                         </div>
                 
-                        <div class="work-card-examples__text-wrapper align--'.$value['text-direction'].' color--light"">
+                        <div class="work-card-examples__text-wrapper align--'.$value['text-direction'].' color--light">
                             <h2 class="work-card__title color--white">'.$value['title'].'</h2>
                             <a href="'.$value['link'].'" target="_blank" rel="noopener" title="'.$value['title'].'" class="work-card__title--small color--light">'.$value['link-text'].'</a>
                             '.$value['description'].'
@@ -136,7 +141,7 @@ echo '</div>
         <source media="(max-width: 699px)" srcset="/components/images/backgrounds/header-background-720.webp" type="image/webp">
         <source media="(max-width: 699px)" srcset="/components/images/backgrounds/header-background-720.jpg" type="image/jpeg"> 
         <source media="(min-width: 700px)" srcset="/components/images/backgrounds/header-background-1350.webp" type="image/webp">
-        <source media="(min-width: 700px)"srcset="/components/images/backgrounds/header-background-1350.jpg" type="image/jpeg"> 
+        <source media="(min-width: 700px)" srcset="/components/images/backgrounds/header-background-1350.jpg" type="image/jpeg"> 
         <img src="/components/images/backgrounds/header-background-1350.jpg" alt="Adrian Bateman's Portfolio" class="background-image">
     </picture>
 
@@ -149,14 +154,19 @@ foreach ($jsonData['skills'] as $key)
     $i = 0;
     while ($i++ < $key['competency'])
     {
-        $starImages .= '<img src="components/images/star.svg" alt="A yellow star">'; 
+        $starImages .= '<img src="components/images/star.svg" alt="A yellow star '.$i.'">'; 
+    }
+
+    $imageWebp = "";
+    if ($key['image-webp'] != ""){
+        $imageWebp = '<source srcset="' . $key['image-webp'] . '" type="image/webp">';
     }
 
     echo '
             <a href="' . $key['url'] . '" target="_blank" rel="noopener" title="' . $key['title'] . '" class="language__item">
 
                 <picture class="width--40">
-                    <source srcset="' . $key['image-webp'] . '" type="image/webp">
+                    '.$imageWebp.'
                     <source srcset="' . $key['image'] . '" type="image/jpeg">
                     <img src="' . $key['image'] . '" width="' . $key['width'] . '" height="' . $key['height'] . '" alt="' . $key['alt'] . '" class="margin-bottom-sm">
                 </picture>
@@ -169,11 +179,8 @@ foreach ($jsonData['skills'] as $key)
 }
 
 ?>
-        </div>
     </div>
 </div>
-
-
 
 <div class="js-hobbiesArticle hobbies__wrapper">
     <h2 class="text--center">Hobbies</h2>
@@ -241,56 +248,21 @@ foreach ($jsonData['skills'] as $key)
 </div>
 
 <div class="js-contactArticle language__wrapper">
-    <h2 class="text--center margin-bottom-sm color--white">Contact</h2>
+    <h2 class="text--center">Contact</h2>
+    <table class="contact__table">
+        <caption>Contact details</caption>
+        <tbody>
+            <tr>
+                <td>Email:</td>
+                <td><a href="mailto:adrian@a-bateman.co.uk">Adrian@A-Bateman.co.uk</a></td>
+            </tr>
 
-<?php
-  if(isset($_POST['submit'])){
-    $name = htmlspecialchars(stripslashes(trim($_POST['name'])));
-    $subject = htmlspecialchars(stripslashes(trim($_POST['subject'])));
-    $email = htmlspecialchars(stripslashes(trim($_POST['email'])));
-    $message = htmlspecialchars(stripslashes(trim($_POST['message'])));
-    if(!preg_match("/^[A-Za-z .'-]+$/", $name)){
-      $name_error = 'Invalid name';
-    }
-    if(!preg_match("/^[A-Za-z .'-]+$/", $subject)){
-      $subject_error = 'Invalid subject';
-    }
-    if(!preg_match("/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/", $email)){
-      $email_error = 'Invalid email';
-    }
-    if(strlen($message) === 0){
-      $message_error = 'Your message should not be empty';
-    }
-  }
-?>
-
-<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" method="POST">
-  <label for="name">Name:</label><br>
-  <input type="text" name="name">
-  <p><?php if(isset($name_error)) echo $name_error; ?></p>
-  <label for="subject">Subject:</label><br>
-  <input type="text" name="subject">
-  <p><?php if(isset($subject_error)) echo $subject_error; ?></p>
-  <label for="email">Email:</label><br>
-  <input type="text" name="email">
-  <p><?php if(isset($email_error)) echo $email_error; ?></p>
-  <label for="message">Message:</label><br>
-  <textarea name="message"></textarea>
-  <p><?php if(isset($message_error)) echo $message_error; ?></p>
-  <input type="submit" name="submit" value="Submit">
-  <?php 
-    if(isset($_POST['submit']) && !isset($name_error) && !isset($subject_error) && !isset($email_error) && !isset($message_error)){
-      $to = 'youremail@addres.com'; // edit here
-      $body = " Name: $name\n E-mail: $email\n Message:\n $message";
-      if(mail($to, $subject, $body)){
-        echo '<p style="color: green">Message sent</p>';
-      }else{
-        echo '<p>Error occurred, please try again later</p>';
-      }
-    }
-  ?>
-</form>
-
+            <tr>
+                <td>Location:</td>
+                <td>Hampshire - Farnborough - UK</td>
+            </tr>
+        </tbody>
+    </table>  
 </div>
 
 <?php
