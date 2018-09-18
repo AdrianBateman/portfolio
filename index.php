@@ -50,11 +50,7 @@ foreach ($jsonData['languages'] as $key) {
     echo '
             <a href="' . $key['url'] . '" target="_blank" rel="noopener" title="' . $key['title'] . '" class="language__item">
 
-                <picture class="width--40">
-                    '.$imageWebp.'
-                    <source srcset="' . $key['image'] . '" type="image/jpeg">
-                    <img src="' . $key['image'] . '" width="' . $key['width'] . '" height="' . $key['height'] . '" alt="' . $key['alt'] . '" class="margin-bottom-sm">
-                </picture>
+                <div class="language-image language-image--' . $key['class'] . '"></div>
                 <div class="language__text-wrapper text--left">
                     <h3 class="language__title">' . $key['title'] . '</h3>
                     <p class="language__text">' . $key['url-short'] . '</p>
@@ -165,11 +161,8 @@ foreach ($jsonData['skills'] as $key)
     echo '
             <a href="' . $key['url'] . '" target="_blank" rel="noopener" title="' . $key['title'] . '" class="language__item">
 
-                <picture class="width--40">
-                    '.$imageWebp.'
-                    <source srcset="' . $key['image'] . '" type="image/jpeg">
-                    <img src="' . $key['image'] . '" width="' . $key['width'] . '" height="' . $key['height'] . '" alt="' . $key['alt'] . '" class="margin-bottom-sm">
-                </picture>
+                <div class="language-image language-image--' . $key['class'] . '"></div>
+                
                 <div class="language__text-wrapper text--left">
                     <h3 class="language__title">' . $key['title'] . '</h3>
                     <p class="language__text">' . $key['url-short'] . '</p>
