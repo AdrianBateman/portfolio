@@ -39,7 +39,7 @@ foreach ($jsonData['languages'] as $key) {
     $i = 0;
     while ($i++ < $key['competency'])
     {
-        $starImages .= '<img src="components/images/star.svg" alt="Star review '.$i.'" width="20" height="18.4">'; 
+        $starImages .= '<img src="https://res.cloudinary.com/a-bateman/image/upload/v1537303084/background/star.svg" alt="Star review '.$i.'" width="19" height="17">'; 
     }
     
     $imageWebp = "";
@@ -77,7 +77,7 @@ foreach ($jsonData['work'] as $key)
         <div class="work-card margin-bottom-md">
             <div class="work-card__image-wrapper text--center order--'.$key['sort-order'].'" >
                 <a href="'.$key['link'].'" target="_blank" rel="noopener" title="'.$key['title'].'">
-                    <img src="/components/images/nexus4.png" width="300" height="568" alt="Mobile phone image frame" class="work-card__image-frame">
+                    <img src="https://res.cloudinary.com/a-bateman/image/upload/q_auto/v1537303085/background/nexus4.png" width="300" height="568" alt="Mobile phone image frame" class="work-card__image-frame">
                     <img src="'.$key['image-placeholder'].'" width="'.$key['image-width'].'" height="'.$key['image-height'].'" class="work-card__image lazy" data-src="'.$key['image'].'" data-srcset="'.$key['image'].'" alt="'.$key['title'].'">
                 </a>
             </div>
@@ -134,11 +134,11 @@ echo '</div>
     <h2 class="text--center color--white">Skills</h2>
     
     <picture>
-        <source media="(max-width: 699px)" srcset="/components/images/backgrounds/header-background-720.webp" type="image/webp">
-        <source media="(max-width: 699px)" srcset="/components/images/backgrounds/header-background-720.jpg" type="image/jpeg"> 
-        <source media="(min-width: 700px)" srcset="/components/images/backgrounds/header-background-1350.webp" type="image/webp">
-        <source media="(min-width: 700px)" srcset="/components/images/backgrounds/header-background-1350.jpg" type="image/jpeg"> 
-        <img src="/components/images/backgrounds/header-background-1350.jpg" alt="Adrian Bateman's Portfolio" class="background-image">
+        <source media="(max-width: 699px)" srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537303374/background/halfwayBackground-720.webp" type="image/webp">
+        <source media="(max-width: 699px)" srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537303532/background/halfwayBackground-720-jpg.jpg" type="image/jpeg"> 
+        <source media="(min-width: 700px)" srcset="https://res.cloudinary.com/a-bateman/image/upload/q_40/v1537303376/background/halfwayBackground-1152.webp" type="image/webp">
+        <source media="(min-width: 700px)" srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537303533/background/halfwayBackground-1152-jpg.jpg" type="image/jpeg"> 
+        <img src="https://res.cloudinary.com/a-bateman/image/upload/v1537303533/background/halfwayBackground-1152-jpg.jpg" alt="Adrian Bateman's Portfolio" class="background-image">
     </picture>
 
     <div class="language__inner-wrapper color--light">
@@ -150,7 +150,7 @@ foreach ($jsonData['skills'] as $key)
     $i = 0;
     while ($i++ < $key['competency'])
     {
-        $starImages .= '<img src="components/images/star.svg" alt="A yellow star '.$i.'" width="20" height="18.4">'; 
+        $starImages .= '<img src="https://res.cloudinary.com/a-bateman/image/upload/v1537303084/background/star.svg" alt="A yellow star '.$i.'" width="19" height="17">'; 
     }
 
     $imageWebp = "";
@@ -180,18 +180,18 @@ foreach ($jsonData['skills'] as $key)
     <h3>Art</h3>
     <div class="work-card-examples">
         <div class="work-card-examples__image-wrapper text--center art-card">
-            <img src="/components/images/art/natural_healing_logo_by_abateman1982-400-ph.jpg" 
-                data-src="/components/images/art/natural_healing_logo_by_abateman1982-400.jpg"
-                data-srcset="/components/images/art/natural_healing_logo_by_abateman1982-400.jpg"
+            <img src="https://res.cloudinary.com/a-bateman/image/upload/v1537301498/art/natural_healing_logo_by_abateman1982-400-ph.jpg" 
+                data-src="https://res.cloudinary.com/a-bateman/image/upload/v1537301499/art/natural_healing_logo_by_abateman1982-400.jpg"
+                data-srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537301499/art/natural_healing_logo_by_abateman1982-400.jpg"
                 alt="Natural Healing Logo"
                 width="400"
                 height="220"
                 class="art-image lazy">
         </div>
         <div class="work-card-examples__text-wrapper align--center color--light art-card">
-            <img src="/components/images/art/corvette_z06_line_art_by_abateman1982-400-ph.png" 
-                data-src="/components/images/art/corvette_z06_line_art_by_abateman1982-400.png"
-                data-srcset="/components/images/art/corvette_z06_line_art_by_abateman1982-400.png"
+            <img src="https://res.cloudinary.com/a-bateman/image/upload/v1537301492/art/corvette_z06_line_art_by_abateman1982-400-ph.png" 
+                data-src="https://res.cloudinary.com/a-bateman/image/upload/v1537301492/art/corvette_z06_line_art_by_abateman1982-400.png"
+                data-srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537301492/art/corvette_z06_line_art_by_abateman1982-400.png"
                 alt="Corvette Z06"
                 width="400"
                 height="283"
@@ -200,16 +200,16 @@ foreach ($jsonData['skills'] as $key)
     </div>
     <div class="work-card-examples">
         <div class="work-card-examples__image-wrapper text--center order--1 art-card">
-            <img src="/components/images/art/AlphaCleanLogo.png" 
+            <img src="https://res.cloudinary.com/a-bateman/image/upload/v1537301492/art/AlphaCleanLogo.png" 
                 alt="Alpha Cleaning logo"
                 width="400"
                 height="123"
                 class="art-image">
         </div>
         <div class="work-card-examples__text-wrapper align--left color--light art-card">
-            <img src="/components/images/art/mugen_civic_typer_by_abateman1982-400-ph.png" 
-                data-src="/components/images/art/mugen_civic_typer_by_abateman1982-400.png"
-                data-srcset="/components/images/art/mugen_civic_typer_by_abateman1982-400.png"
+            <img src="https://res.cloudinary.com/a-bateman/image/upload/v1537301495/art/mugen_civic_typer_by_abateman1982-400-ph.png" 
+                data-src="https://res.cloudinary.com/a-bateman/image/upload/v1537301496/art/mugen_civic_typer_by_abateman1982-400.png"
+                data-srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537301496/art/mugen_civic_typer_by_abateman1982-400.png"
                 alt="Mugen Civic TypeR"
                 width="400"
                 height="283"
@@ -220,9 +220,9 @@ foreach ($jsonData['skills'] as $key)
     <h3>Mobile Apps</h3>
     <div class="work-card-examples">
         <div class="work-card-examples__image-wrapper text--center">
-            <img src="/components/images/art/STBType-ph.png"
-            data-src="/components/images/art/STBType.png" 
-            data-srcset="/components/images/art/STBType.png" 
+            <img src="https://res.cloudinary.com/a-bateman/image/upload/v1537301500/art/STBType-ph.png"
+            data-src="https://res.cloudinary.com/a-bateman/image/upload/v1537301501/art/STBType.png" 
+            data-srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537301501/art/STBType.png" 
             alt="STBType Application"
             width="300"
             height="339"

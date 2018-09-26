@@ -34,11 +34,11 @@
 
 <div class="js-TopLinkTo header__wrapper">
     <picture>
-        <source media="(max-width: 699px)" srcset="/components/images/backgrounds/halfwayBackground-720.webp" type="image/webp">
-        <source media="(max-width: 699px)" srcset="/components/images/backgrounds/halfwayBackground-720.jpg" type="image/jpeg"> 
-        <source media="(min-width: 700px)" srcset="/components/images/backgrounds/halfwayBackground-1152.webp" type="image/webp">
-        <source media="(min-width: 700px)" srcset="/components/images/backgrounds/halfwayBackground-1152.jpg" type="image/jpeg"> 
-        <img src="/components/images/backgrounds/halfwayBackground-1152.jpg" alt="Adrian Bateman's Portfolio" class="background-image">
+        <source media="(max-width: 699px)" srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537303377/background/header-background-720.webp" type="image/webp">
+        <source media="(max-width: 699px)" srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537303534/background/header-background-720-jpg.jpg" type="image/jpeg"> 
+        <source media="(min-width: 700px)" srcset="https://res.cloudinary.com/a-bateman/image/upload/q_60/v1537303380/background/header-background-1350.webp" type="image/webp">
+        <source media="(min-width: 700px)" srcset="https://res.cloudinary.com/a-bateman/image/upload/v1537303536/background/header-background-1350-jpg.jpg" type="image/jpeg"> 
+        <img src="https://res.cloudinary.com/a-bateman/image/upload/v1537303536/background/header-background-1350-jpg.jpg" alt="Adrian Bateman's Portfolio" class="background-image">
     </picture>
     
     <div class="column header__logo-wrapper text--center">

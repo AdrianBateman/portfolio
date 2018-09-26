@@ -4,11 +4,6 @@
             "url-short": "www.w3.org",
             "title": "HTML5",
             "class": "html5",
-            "image": "/components/images/logos/html5.png",
-            "image-webp": "/components/images/logos/html5.webp",
-            "alt": "Great at HTML",
-            "width": "50",
-            "height": "50",
             "competency": "5"
         },
         {
@@ -16,11 +11,6 @@
             "url-short": "www.w3.org",
             "title": "CSS3",
             "class": "css3",
-            "image": "/components/images/logos/css3.png",
-            "image-webp": "/components/images/logos/css3.webp",
-            "alt": "",
-            "width": "35",
-            "height": "50",
             "competency": "5"
         },
         {
@@ -28,11 +18,6 @@
             "url-short": "www.lesscss.org",
             "title": "LESS",
             "class": "less",
-            "image": "/components/images/logos/less.png",
-            "image-webp": "/components/images/logos/less.webp",
-            "alt": "",
-            "width": "112",
-            "height": "50",
             "competency": "4"
         },
         {
@@ -40,11 +25,6 @@
             "url-short": "www.ecma-international.org",
             "title": "Javascript",
             "class": "js",
-            "image": "/components/images/logos/javascript.png",
-            "image-webp": "",
-            "alt": "",
-            "width": "50",
-            "height": "50",
             "competency": "3"
         },
         {
@@ -52,11 +32,6 @@
             "url-short": "www.php.net",
             "title": "PHP",
             "class": "php",
-            "image": "/components/images/logos/php.png",
-            "image-webp": "/components/images/logos/php.webp",
-            "alt": "",
-            "width": "93",
-            "height": "50",
             "competency": "3"
         },
         {
@@ -64,19 +39,14 @@
             "url-short": "www.java.com",
             "title": "Java",
             "class": "java",
-            "image": "/components/images/logos/java.png",
-            "image-webp": "/components/images/logos/java.webp",
-            "alt": "",
-            "width": "26",
-            "height": "50",
             "competency": "3"
         }
     ],
     "work": [{
             "sort-order": "0",
             "text-direction": "left",
-            "image": "/components/images/work-sites/dreams.co.uk.png",
-            "image-placeholder": "/components/images/work-sites/dreams-placeholder.jpg",
+            "image": "https://res.cloudinary.com/a-bateman/image/upload/v1537302226/work/dreams.co.uk.png",
+            "image-placeholder": "https://res.cloudinary.com/a-bateman/image/upload/v1537302224/work/dreams-placeholder.jpg",
             "image-width": "260",
             "image-height": "462",
             "title": "Dreams Ltd",
@@ -88,8 +58,8 @@
         {
             "sort-order": "1",
             "text-direction": "right",
-            "image": "/components/images/work-sites/websitesbylime.co.uk.png",
-            "image-placeholder": "/components/images/work-sites/websitesbylime-placeholder.jpg",
+            "image": "https://res.cloudinary.com/a-bateman/image/upload/v1537302234/work/websitesbylime.co.uk.png",
+            "image-placeholder": "https://res.cloudinary.com/a-bateman/image/upload/v1537302233/work/websitesbylime-placeholder.jpg",
             "image-width": "260",
             "image-height": "462",
             "title": "Websites By Lime Ltd",
@@ -100,8 +70,8 @@
             "sites-created": [{
                     "sort-order": "0",
                     "text-direction": "left",
-                    "image": "/components/images/work-sites/alphacleaningoxon.co.uk.png",
-                    "image-placeholder": "/components/images/work-sites/alphaclean-placeholder.jpg",
+                    "image": "https://res.cloudinary.com/a-bateman/image/upload/v1537302223/work/alphacleaningoxon.co.uk.png",
+                    "image-placeholder": "https://res.cloudinary.com/a-bateman/image/upload/v1537302222/work/alphaclean-placeholder.jpg",
                     "image-width": "390",
                     "image-height": "293",
                     "title": "Alpha Cleaning",
@@ -114,8 +84,8 @@
                 {
                     "sort-order": "1",
                     "text-direction": "right",
-                    "image": "/components/images/work-sites/southhantslawns.co.uk.png",
-                    "image-placeholder": "/components/images/work-sites/southhantslawns-placeholder.jpg",
+                    "image": "https://res.cloudinary.com/a-bateman/image/upload/v1537302230/work/southhantslawns.co.uk.png",
+                    "image-placeholder": "https://res.cloudinary.com/a-bateman/image/upload/v1537302229/work/southhantslawns-placeholder.jpg",
                     "image-width": "390",
                     "image-height": "293",
                     "title": "South Hants Lawns",
@@ -128,8 +98,8 @@
                 {
                     "sort-order": "0",
                     "text-direction": "left",
-                    "image": "/components/images/work-sites/jamesthorpecarpentry.co.uk.png",
-                    "image-placeholder": "/components/images/work-sites/jamesthorprcarpentry-placeholder.jpg",
+                    "image": "https://res.cloudinary.com/a-bateman/image/upload/v1537302227/work/jamesthorpecarpentry.co.uk.png",
+                    "image-placeholder": "https://res.cloudinary.com/a-bateman/image/upload/v1537302228/work/jamesthorprcarpentry-placeholder.jpg",
                     "image-width": "390",
                     "image-height": "293",
                     "title": "James Thorpe Bespoke Carpentry",
@@ -142,8 +112,8 @@
                 {
                     "sort-order": "1",
                     "text-direction": "right",
-                    "image": "/components/images/work-sites/townandcountrylandscapes.co.uk.png",
-                    "image-placeholder": "/components/images/work-sites/townncountry-placeholder.jpg",
+                    "image": "https://res.cloudinary.com/a-bateman/image/upload/v1537302231/work/townandcountrylandscapes.co.uk.png",
+                    "image-placeholder": "https://res.cloudinary.com/a-bateman/image/upload/v1537302232/work/townncountry-placeholder.jpg",
                     "image-width": "390",
                     "image-height": "293",
                     "title": "Town and Country Landscapes",
@@ -156,8 +126,8 @@
                 {
                     "sort-order": "0",
                     "text-direction": "left",
-                    "image": "/components/images/work-sites/claphamholmefarm.co.uk.png",
-                    "image-placeholder": "/components/images/work-sites/claphamholmefarm-placeholder.jpg",
+                    "image": "https://res.cloudinary.com/a-bateman/image/upload/v1537302223/work/claphamholmefarm.co.uk.png",
+                    "image-placeholder": "https://res.cloudinary.com/a-bateman/image/upload/v1537302223/work/claphamholmefarm-placeholder.jpg",
                     "image-width": "390",
                     "image-height": "293",
                     "title": "Clapham Holme Farm",
@@ -175,11 +145,6 @@
             "url-short": "www.ampproject.org",
             "title": "Google AMP",
             "class": "amp",
-            "image": "/components/images/logos/ampproject.png",
-            "image-webp": "",
-            "alt": "",
-            "width": "50",
-            "height": "50",
             "competency": "5"
         },
         {
@@ -187,11 +152,6 @@
             "url-short": "www.git-scm.com",
             "title": "Git hub",
             "class": "git",
-            "image": "/components/images/logos/github.png",
-            "image-webp": "/components/images/logos/github.webp",
-            "alt": "",
-            "width": "50",
-            "height": "50",
             "competency": "4"
         },
         {
@@ -199,11 +159,6 @@
             "url-short": "www.getbootstrap.com",
             "title": "Bootstrap 3/4",
             "class": "bs",
-            "image": "/components/images/logos/bootstrap.png",
-            "image-webp": "",
-            "alt": "",
-            "width": "50",
-            "height": "50",
             "competency": "5"
         },
         {
@@ -211,11 +166,6 @@
             "url-short": "www.amplience.com",
             "title": "Amplience",
             "class": "amplience",
-            "image": "/components/images/logos/amplience.png",
-            "image-webp": "/components/images/logos/amplience.webp",
-            "alt": "",
-            "width": "50",
-            "height": "50",
             "competency": "3"
         },
         {
@@ -223,11 +173,6 @@
             "url-short": "www.magento.com",
             "title": "Magento",
             "class": "magento",
-            "image": "/components/images/logos/magento.png",
-            "image-webp": "",
-            "alt": "",
-            "width": "50",
-            "height": "50",
             "competency": "3"
         }
     ]
