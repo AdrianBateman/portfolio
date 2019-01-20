@@ -37,10 +37,10 @@ echo '<div id="mainContent" class="js-languagesArticle language__wrapper backgro
 foreach ($jsonData['languages'] as $key) {
     $starImages = "";
     $i = 0;
-    while ($i++ < $key['competency'])
-    {
-        $starImages .= '<img src="https://res.cloudinary.com/a-bateman/image/upload/v1537303084/background/star.svg" alt="Star review '.$i.'" width="19" height="17">'; 
-    }
+    // while ($i++ < $key['competency'])
+    // {
+    //     $starImages .= '<img src="https://res.cloudinary.com/a-bateman/image/upload/v1537303084/background/star.svg" alt="Star review '.$i.'" width="19" height="17">'; 
+    // }
     
     $imageWebp = "";
     if ($key['image-webp'] != ""){
@@ -148,10 +148,10 @@ foreach ($jsonData['skills'] as $key)
 {
     $starImages = "";
     $i = 0;
-    while ($i++ < $key['competency'])
-    {
-        $starImages .= '<img src="https://res.cloudinary.com/a-bateman/image/upload/v1537303084/background/star.svg" alt="A yellow star '.$i.'" width="19" height="17">'; 
-    }
+    // while ($i++ < $key['competency'])
+    // {
+    //     $starImages .= '<img src="https://res.cloudinary.com/a-bateman/image/upload/v1537303084/background/star.svg" alt="A yellow star '.$i.'" width="19" height="17">'; 
+    // }
 
     $imageWebp = "";
     if ($key['image-webp'] != ""){
