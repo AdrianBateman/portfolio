@@ -25,7 +25,7 @@ Route\Route::add(
 
         echo globalHeaderTemplate($title);
 
-        echo homeTemplate();
+        echo aboutTemplate();
 
         echo globalFooterTemplate();
     }
