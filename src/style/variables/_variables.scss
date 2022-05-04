@@ -1,10 +1,10 @@
-$main-color: #FFF;
-$main-bg-color: #1C191C;
-$main-active-color: #B19EFF;
-$dark-gray: #262626;
+$main-color: hsl(300, 6%, 10%);
+$main-bg-color: hsl(0, 0%, 92%);
+$main-active-color: hsl(203, 96%, 56%);
+$dark-gray: hsl(203, 96%, 66%);
 
-$primary-font-family: Georgia, serif;
-$secondary-font-family: Tahoma, sans-serif;
+$primary-font-family: Helvetica, sans-serif;
+$secondary-font-family: "Courier New", monospace;
 
-$max-render-width: 1200px;
+$max-render-width: 1500px;
 $max-screen-height: 75vh;
