@@ -1,0 +1,10 @@
+services:
+  web-server:
+    build:
+      dockerfile: php.Dockerfile
+      context: .
+    restart: always
+    volumes:
+      - "./:/var/www/:z"
+    ports:
+      - "8080:80"

@@ -1,0 +1,6 @@
+<?php
+
+function homeTemplate(): string
+{
+    return "<h1>Hello World!</h1>";
+}

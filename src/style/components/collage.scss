@@ -1,0 +1,30 @@
+.collage {
+  @media screen and (min-width: 750px) {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-row-start: span 2;
+    grid-auto-flow: row dense;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1e1e1e;
+    padding: 1rem;
+    margin-bottom: 3rem;
+
+    @media screen and (min-width: 750px) {
+      margin: 0;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+
+
+
+}

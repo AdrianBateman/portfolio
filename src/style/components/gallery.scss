@@ -1,0 +1,62 @@
+@import "../variables/variables";
+
+.gallery {
+  margin-bottom: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 2px solid $dark-gray;
+
+  &__title {
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+  }
+
+  &__date {
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    font-family: $secondary-font-family;
+  }
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (min-width: 750px) {
+    flex-direction: row;
+  }
+
+  &__image {
+    max-width: 100%;
+    max-height: $max-screen-height;
+    height: auto;
+    width: auto;
+
+    &.lazy-image {
+      display: block;
+      height: 800px;
+      background-color: $dark-gray;
+    }
+  }
+
+  &__figure {
+    padding: 1rem;
+
+    @media screen and (min-width: 750px) {
+      width: 40%;
+      margin-left: 2rem;
+    }
+  }
+
+  &__source {
+    margin-bottom: 1.5rem;
+
+    &::before {
+      content: "-";
+      font-weight: 600;
+      margin-right: 0.5rem;
+      display: inline-block;
+    }
+  }
+}
