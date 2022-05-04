@@ -39,4 +39,9 @@ webpackConfig.plugins = [
     ),
 ];
 
+webpackConfig.watchOptions = {
+    aggregateTimeout: 200,
+    poll: 1000,
+};
+
 module.exports = webpackConfig;
