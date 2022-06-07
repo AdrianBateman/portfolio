@@ -1,6 +1,6 @@
 .header-hero {
   max-width: fit-content;
-  margin: 5rem auto;
+  margin: 5rem auto 0;
   line-height: 1.25;
 
   &__title {
@@ -17,16 +17,5 @@
       font-weight: 300;
       letter-spacing: normal;
     }
-  }
-
-  &__list {
-    display: flex;
-    list-style: none;
-  }
-}
-
-.header-hero-list {
-  &__item {
-    margin-right: 1rem;
   }
 }

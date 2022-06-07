@@ -1,5 +1,10 @@
-$main-color: hsl(300, 6%, 10%);
-$main-color-l30: hsl(300, 6%, 30%);
+$main: 300;
+$active: 203;
+$main-color: hsl($main, 6%, 10%);
+$main-color-l30: hsl($main, 6%, 30%);
+
 $main-bg-color: hsl(0, 0%, 92%);
-$main-active-color: hsl(203, 96%, 56%);
-$dark-gray: hsl(203, 96%, 66%);
+
+$active-color: hsl($active, 96%, 56%);
+$active-color-l66: hsl($active, 96%, 66%);
+$active-color-l86: hsl($active, 96%, 86%);
