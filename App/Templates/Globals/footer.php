@@ -10,11 +10,9 @@ function globalFooterTemplate(): string
     $footer .= 'Adrian Bateman ' .
         '| <a href="/about">About</a>' .
         '</p></address>' .
-        '</footer><script>';
+        '</footer>';
 
-    $footer .= file_get_contents(BASE_PATH . 'html/dist/script.js');
-
-    $footer .= '</script></body></html>';
+    $footer .= '</body></html>';
 
     return $footer;
 }

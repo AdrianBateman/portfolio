@@ -1,14 +1,25 @@
+@import "../variables/screen-sizes";
+
 .header-hero {
   max-width: fit-content;
-  margin: 5rem auto 0;
+  margin: 0 auto;
   line-height: 1.25;
+  padding: 1rem;
+
+  @media screen and (min-width: $DESKTOP) {
+    margin-top: 5rem;
+  }
 
   &__title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-style: normal;
     letter-spacing: 0.15ch;
     color: $main-color;
     font-weight: 900;
+
+    @media screen and (min-width: $DESKTOP) {
+      font-size: 3rem;
+    }
 
     &--small {
       display: block;

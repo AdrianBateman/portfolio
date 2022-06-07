@@ -1,4 +1,5 @@
 @import "../variables/variables";
+@import "../variables/screen-sizes";
 
 nav {
   position: sticky;
@@ -6,7 +7,7 @@ nav {
   background-color: $main-bg-color;
   z-index: 10;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $DESKTOP) {
     overflow-x: hidden;
   }
 }
@@ -18,7 +19,7 @@ nav {
   letter-spacing: 3px;
   font-family: $secondary-font-family;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $DESKTOP) {
     display: none;
   }
 
@@ -42,7 +43,7 @@ nav {
   background-color: $main-bg-color;
   overflow: hidden;
 
-  @media screen and (min-width: 1000px) {
+  @media screen and (min-width: $DESKTOP) {
     position: relative;
     flex-direction: row;
     height: fit-content;
@@ -62,8 +63,9 @@ nav {
     color: $main-color;
     border-radius: 2px;
     letter-spacing: 3px;
+    transition: background-color $short-animation-time linear;
 
-    @media screen and (min-width: 1000px) {
+    @media screen and (min-width: $DESKTOP) {
       margin: 0 0.25rem;
       padding: 0.15rem 2rem;
       letter-spacing: 1px;
@@ -83,7 +85,7 @@ nav {
       outline: 1px solid $active-color;
       outline-offset: -4px;
 
-      @media screen and (min-width: 1000px) {
+      @media screen and (min-width: $DESKTOP) {
         background-color: $active-color;
       }
     }
