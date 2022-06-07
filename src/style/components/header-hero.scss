@@ -18,4 +18,15 @@
       letter-spacing: normal;
     }
   }
+
+  &__list {
+    display: flex;
+    list-style: none;
+  }
+}
+
+.header-hero-list {
+  &__item {
+    margin-right: 1rem;
+  }
 }
