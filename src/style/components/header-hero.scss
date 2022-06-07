@@ -1,0 +1,21 @@
+.header-hero {
+  max-width: fit-content;
+  margin: 5rem auto;
+  line-height: 1.25;
+
+  &__title {
+    font-size: 3rem;
+    font-style: normal;
+    letter-spacing: 0.15ch;
+    color: $main-color;
+    font-weight: 900;
+
+    &--small {
+      display: block;
+      font-size: 1.5rem;
+      color: $main-color-l30;
+      font-weight: 300;
+      letter-spacing: normal;
+    }
+  }
+}
