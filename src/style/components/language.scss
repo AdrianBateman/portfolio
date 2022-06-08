@@ -1,7 +1,15 @@
+.language {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+}
+
 .language-list {
     list-style: none;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
+    font-size: 0.9rem;
 
     &__item {
         margin: 0 1ch;
