@@ -37,23 +37,41 @@ function homeTemplate(): string
                 Dreams Ltd
             </a>
         </h1>
+
+        <h2>Vue JS</h2>
+
         <p>
-            Originally joining as a junior web developer in order to help out with day
-            to day tasks, I quickly became a valued member of the online trading team.
-            Assisting with not only the day to day tasks but also improving the site
-            load speed, using tried and tested techniques. This helps improve customer
-            experience and overall bounce rate & spend rate.
+            The original frontend for Dreams was written using dated techniques that were causing page
+            loading times to be too high for our visitors.  The decition was made to rewrite the front
+            end using VueJS.  We have been rewriting the front end to improve speed and stability.  Unit
+            testing was introduced during this process, playing a key role in improing overal coding
+            standards.
         </p>
+
+        <h2>Website Benchmarking Tool</h2>
+
         <p>
-            We switched platforms from Magento to Hybris and Amplience to proved a
-            "Headless Web" experience. This meant that we had only one source of
-            information going to each required destination.
+            Using NodeJS, an internal website speed testing tool has been developed to help monitor
+            changes to our staging site before pushing live.  This help with communicating to the
+            wider business.
         </p>
 
         <p>
-            Along with Hybris, we developed a mobile version of the site, working closely
-            with Google. This version uses the same Amplience feed as Hybris but is build entirely
-            in-house in PHP with Google's AMP project to help page load times.
+            Results are stored in a MS SQL database and retrieved with HTML front
+            end using NodeJS.
+        </p>
+
+        <h2>
+            <a
+                href="https://www.dreams.co.uk/amp/beds"
+                rel="noopener noreferrer nofollow"
+            >AMP</a> - Accelerated Mobile Pages
+        </h2>
+
+        <p>
+            Develped in PHP, the aim of this project is to recreate key landing pages using Google's
+            HTML framework.  This improves core metrics including site loading times, which in turn
+            drive more mobile trafic.
         </p>
     </article>
     END;
