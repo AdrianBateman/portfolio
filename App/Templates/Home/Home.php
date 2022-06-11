@@ -9,5 +9,7 @@ function homeTemplate(): string
 
     $template .= file_get_contents(TEMPLATES_PATH . 'Articles/dreams.html', FILE_USE_INCLUDE_PATH);
 
+    $template .= file_get_contents(TEMPLATES_PATH . 'Articles/websites-by-lime.html', FILE_USE_INCLUDE_PATH);
+
     return $template;
 }
