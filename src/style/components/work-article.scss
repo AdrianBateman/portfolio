@@ -1,0 +1,34 @@
+@import "../variables/colors";
+
+.work-article {
+    margin-bottom: 5rem;
+    padding-bottom: 5rem;
+    border-bottom: 2px solid $main-color-l85;
+
+    &__title {
+        font-size: 3rem;
+        line-height: 1.2;
+    }
+
+    &__languages {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        font-size: 0.9rem;
+        list-style: none;
+        line-height: 1.5;
+        color: #514851;
+    }
+
+    h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 3rem 0 1rem;
+    }
+}
+
+.work-article-languages {
+    &__item {
+        margin: 0 0.5ch;
+    }
+}
