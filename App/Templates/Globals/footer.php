@@ -12,7 +12,9 @@ function globalFooterTemplate(): string
         '</p></address>' .
         '</footer>';
 
-    $footer .= '</body></html>';
+    $footer .= '<script>';
+    $footer .= file_get_contents(DIST . 'script.js', FILE_USE_INCLUDE_PATH);
+    $footer .= '</script></body></html>';
 
     return $footer;
 }

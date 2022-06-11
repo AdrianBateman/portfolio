@@ -14,4 +14,4 @@ defined('DATA') || define('DATA', __DIR__ . DIRECTORY_SEPARATOR . 'App/Data/');
 
 defined('METHODS') || define('METHODS', __DIR__ . DIRECTORY_SEPARATOR . 'App/Methods/');
 
-defined('CLOUD_URI') || define('CLOUD_URI', 'https://res.cloudinary.com/moose-artist/image/upload/');
+defined('DIST') || define('DIST', __DIR__ . DIRECTORY_SEPARATOR . 'html/dist/');

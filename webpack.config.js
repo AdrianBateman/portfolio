@@ -1,13 +1,13 @@
-const path = require('path');
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
-const {CleanWebpackPlugin} = require('clean-webpack-plugin');
+const path = require( 'path' );
+const MiniCssExtractPlugin = require( "mini-css-extract-plugin" );
+const FixStyleOnlyEntriesPlugin = require( "webpack-fix-style-only-entries" );
+const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
 
-const webpackConfig = {};
+const webpackConfig = { devtool: false };
 
 webpackConfig.output = {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'html/dist'),
+    path: path.resolve( __dirname, 'html/dist' ),
 };
 
 webpackConfig.module = {
