@@ -26,23 +26,56 @@
     }
 
     &__description {
-        height: 0;
+        max-height: 0;
         overflow: hidden;
+        transition: max-height 1000ms ease;
 
         &--open {
-            height: fit-content;
+            max-height: 1000px;
         }
     }
 
+    &__details-button {
+        display: flex;
+        width: fit-content;
+        margin: 1rem auto;
+        padding: 1rem 2rem;
+        align-items: center;
+        font-weight: 600;
+        letter-spacing: 0.1rem;
+        border-width: 0;
+        border-radius: 0.5rem;
+        background-color: $active-color;
+    }
+
     h2 {
+        margin: 1rem 0;
         font-size: 2rem;
         line-height: 1.2;
-        margin: 3rem 0 1rem;
     }
 }
 
 .work-article-languages {
     &__item {
         margin: 0 0.5ch;
+    }
+}
+
+.arrow {
+    position: relative;
+    display: inline-block;
+    margin-right: 1ch;
+
+    &--down {
+        width: 0;
+        height: 0;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 30px solid $main-color;
+        transition: transform 0.5s ease;
+    }
+
+    &--up {
+        transform: rotate(180deg);
     }
 }
