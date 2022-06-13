@@ -44,6 +44,7 @@ nav {
     &:hover,
     &:active {
       background-color: $active-color;
+      color: $main-bg-color;
     }
 
     &:focus {
@@ -53,6 +54,7 @@ nav {
 
     &--active {
       background-color: $active-color;
+      color: $main-bg-color;
     }
   }
 }
