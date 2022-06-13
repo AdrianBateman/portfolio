@@ -1,8 +1,8 @@
 @import "../variables/colors";
 
 .work-article {
-    margin-bottom: 5rem;
-    padding-bottom: 5rem;
+    margin-bottom: 4rem;
+    padding-bottom: 2rem;
     border-bottom: 2px solid $main-color-l85;
 
     &__title {
@@ -11,6 +11,7 @@
 
         &--small {
             display: block;
+            margin-bottom: 2rem;
             font-size: 1.2rem;
         }
     }
@@ -23,22 +24,30 @@
         list-style: none;
         line-height: 1.5;
         color: $main-color-l30;
+
+        &:last-of-type {
+            margin-bottom: 2rem;
+        }
     }
 
     &__description {
-        max-height: 0;
+        height: 0;
         overflow: hidden;
-        transition: max-height 1000ms ease;
+        transition: height 1s ease;
+    }
 
-        &--open {
-            max-height: 1000px;
+    &__content {
+        margin-bottom: 2rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
         }
     }
 
     &__details-button {
         display: flex;
         width: fit-content;
-        margin: 1rem auto;
+        margin: 2rem auto 0;
         padding: 1rem 2rem;
         align-items: center;
         font-weight: 600;
@@ -49,7 +58,7 @@
     }
 
     h2 {
-        margin: 1rem 0;
+        margin: 0 0 2rem;
         font-size: 2rem;
         line-height: 1.2;
     }
@@ -62,20 +71,19 @@
 }
 
 .arrow {
-    position: relative;
-    display: inline-block;
-    margin-right: 1ch;
-
-    &--down {
+    &--down::before {
+        content: "";
+        display: inline-block;
         width: 0;
         height: 0;
-        border-left: 15px solid transparent;
-        border-right: 15px solid transparent;
-        border-top: 30px solid $main-color;
+        margin-right: 1ch;
+        border-left: 7px solid transparent;
+        border-right: 7px solid transparent;
+        border-top: 14px solid $main-color;
         transition: transform 0.5s ease;
     }
 
-    &--up {
+    &--up::before {
         transform: rotate(180deg);
     }
 }

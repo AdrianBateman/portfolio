@@ -9,6 +9,14 @@ descriptionButtons.forEach( ( button ) =>
       .querySelector( '.work-article__description' );
 
     description.classList.toggle( 'work-article__description--open' );
+    const descriptionStyleHeight = description.style.height;
+
+    description.style.height = (
+      descriptionStyleHeight === ''
+      || descriptionStyleHeight === '0px'
+    )
+      ? `${ description.scrollHeight }px`
+      : '0px';
 
     if ( description.classList.contains( 'work-article__description--open' ) )
     {
@@ -30,8 +38,7 @@ descriptionButtons.forEach( ( button ) =>
         );
     }
 
-    const arrow = target.querySelector( '.arrow--down' );
-    arrow.classList.toggle( 'arrow--up' );
+    target.classList.toggle( 'arrow--up' );
 
   } );
 

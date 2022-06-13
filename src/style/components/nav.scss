@@ -12,57 +12,27 @@ nav {
   }
 }
 
-.mobile-nav {
-  display: block;
-  padding: 0.5rem 1rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-  font-family: $secondary-font-family;
-
-  @media screen and (min-width: $DESKTOP) {
-    display: none;
-  }
-
-  &__checkbox {
-    display: none;
-  }
-}
-
-.mobile-nav__checkbox:checked ~ .main-nav {
-  height: fit-content;
-}
-
 .main-nav {
   position: absolute;
   width: 100vw;
   display: flex;
-  flex-direction: column;
-  height: 0;
+  height: fit-content;
+  position: relative;
   list-style: none;
-  border-bottom: 2px solid $active-color-l86;
+  border-bottom: 1px solid $active-color-l86;
   background-color: $main-bg-color;
   overflow: hidden;
-
-  @media screen and (min-width: $DESKTOP) {
-    position: relative;
-    flex-direction: row;
-    height: fit-content;
-    flex-wrap: nowrap;
-    padding: 0.25rem 0;
-  }
 
   &__item {
     display: block;
     width: fit-content;
     margin: 0 0.125rem;
-    padding: 0.5rem 1rem;
+    padding: 0.125rem 0.5rem;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 1rem;
     font-weight: 600;
-    color: $main-color;
     border-radius: 2px;
-    letter-spacing: 3px;
+    color: $main-color;
     transition: background-color $short-animation-time linear;
 
     @media screen and (min-width: $DESKTOP) {
@@ -82,12 +52,7 @@ nav {
     }
 
     &--active {
-      outline: 1px solid $active-color;
-      outline-offset: -4px;
-
-      @media screen and (min-width: $DESKTOP) {
-        background-color: $active-color;
-      }
+      background-color: $active-color;
     }
   }
 }

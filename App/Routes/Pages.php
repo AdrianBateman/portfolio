@@ -17,15 +17,15 @@ Route\Route::add(
 );
 
 Route\Route::add(
-    '/about',
+    '/hobbies',
     function () {
-        require_once TEMPLATES_PATH . 'About/About.php';
+        require_once TEMPLATES_PATH . 'Hobbies/Hobbies.php';
 
-        $title = 'About';
+        $title = 'Hobbies';
 
         echo globalHeaderTemplate($title);
 
-        echo aboutTemplate();
+        echo hobbiesTemplate();
 
         echo globalFooterTemplate();
     }

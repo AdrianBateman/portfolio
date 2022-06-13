@@ -8,8 +8,7 @@
         </small>
     </h1>
 
-    <ul class="work-article__languages">
-        <li class="work-article-languages__item">JavaScript</li>
+    <ul class="work-article__languages work-article-languages">
         <li class="work-article-languages__item">HTML</li>
         <li class="work-article-languages__item">AMP</li>
         <li class="work-article-languages__item">CSS</li>
@@ -18,13 +17,21 @@
     </ul>
 
     <ul class="work-article__languages work-article-languages">
+        <li class="work-article-languages__item">JavaScript</li>
+        <li class="work-article-languages__item">VueJS</li>
+        <li class="work-article-languages__item">jQuery</li>
+        <li class="work-article-languages__item">Jest</li>
+    </ul>
+
+    <ul class="work-article__languages work-article-languages">
         <li class="work-article-languages__item">Java</li>
         <li class="work-article-languages__item">PHP</li>
         <li class="work-article-languages__item">NodeJS</li>
+        <li class="work-article-languages__item">webpack</li>
         <li class="work-article-languages__item">MSSQL</li>
     </ul>
 
-    <p>
+    <p class="work-article__content">
         Joining as a junior web developer, to help out with day to day tasks. I quickly became
         a valued member of the team, assisting with not only the day to day tasks, also creating
         AMP version of the site and more...
@@ -33,7 +40,7 @@
     <div class="work-article__description">
         <h2>Vue JS</h2>
 
-        <p>
+        <p class="work-article__content">
             The original frontend for Dreams was written using dated techniques that were causing page
             loading times to be too high for our visitors. The decision was made to rewrite the front
             end using VueJS. We have been rewriting the front end to improve speed and stability. Unit
@@ -43,13 +50,13 @@
 
         <h2>Benchmarking Tool</h2>
 
-        <p>
+        <p class="work-article__content">
             Using NodeJS, an internal website speed testing tool has been developed to help monitor
             changes to our staging site before pushing live. This helps with communicating with the
             wider business.
         </p>
 
-        <p>
+        <p class="work-article__content">
             Results are stored in a MS SQL database and retrieved with an HTML front
             end using NodeJS.
         </p>
@@ -63,14 +70,13 @@
             </small>
         </h2>
 
-        <p>
+        <p class="work-article__content">
             Developed in PHP, the aim of this project is to recreate key landing pages using Google's
             HTML framework. This improves core metrics, including site loading times, which in turn
             drive more mobile traffic.
         </p>
     </div>
-    <button class="work-article__details-button">
-        <i class="arrow arrow--down"></i>
+    <button class="work-article__details-button arrow arrow--down">
         DETAILS
     </button>
 </article>

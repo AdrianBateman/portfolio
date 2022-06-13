@@ -4,11 +4,10 @@ function globalNavigationTemplate(string $pageTitle): string
 {
     $navigation = array(
         'Home' => '/',
-        'About Me' => '/about',
+        'Hobbies' => '/hobbies',
     );
 
-    $template = '<nav><label for="nav-checkbox" class="mobile-nav">MENU</label>' .
-        '<input id="nav-checkbox" type="checkbox" class="mobile-nav__checkbox"><ul class="main-nav">';
+    $template = '<nav><ul class="main-nav">';
 
     foreach ($navigation as $item => $key) {
         if ($item === $pageTitle) {
