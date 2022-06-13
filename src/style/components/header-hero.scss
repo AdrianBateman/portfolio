@@ -11,6 +11,7 @@
   }
 
   &__title {
+    position: relative;
     font-size: 2.5rem;
     font-style: normal;
     letter-spacing: 0.15ch;
@@ -21,6 +22,32 @@
       font-size: 3rem;
     }
 
+    @mixin border-square {
+      content: "";
+      position: absolute;
+      width: 1rem;
+      height: 1rem;
+      border-style: solid;
+      border-color: $active-color;
+      border-width: 0;
+    }
+
+    &::before {
+      @include border-square;
+      top: -0.4ex;
+      left: -0.4ch;
+      border-top-width: 2px;
+      border-left-width: 2px;
+    }
+
+    &::after {
+      @include border-square;
+      bottom: -0.4ex;
+      right: -0.4ch;
+      border-bottom-width: 2px;
+      border-right-width: 2px;
+    }
+
     &--small {
       display: block;
       margin-top: 1rem;
@@ -28,7 +55,11 @@
       font-size: 1.5rem;
       font-weight: 300;
       letter-spacing: normal;
-      color: $main-color-l30;
+      color: $main-color-l70;
+    }
+
+    &--right {
+      text-align: right;
     }
   }
 }

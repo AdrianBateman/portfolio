@@ -3,10 +3,12 @@ $secondary: 300;
 $active: 203;
 
 $main-color: hsl($main, 0%, 92%);
-$main-color-l30: hsl($main, 0%, 70%);
-$main-color-l85: hsl($main, 0%, 15%);
+$main-color-l70: hsl($main, 0%, 70%);
+$main-color-l30: hsl($main, 0%, 30%);
+$main-color-l15: hsl($main, 0%, 15%);
 
 $main-bg-color: hsl($secondary, 6%, 10%);
+$second-bg-color: hsl($secondary, 6%, 5%);
 
 $active-color: hsl($active, 96%, 56%);
 $active-color-l66: hsl($active, 96%, 66%);

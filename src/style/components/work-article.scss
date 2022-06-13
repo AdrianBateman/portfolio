@@ -3,16 +3,17 @@
 .work-article {
     margin-bottom: 4rem;
     padding-bottom: 2rem;
-    border-bottom: 2px solid $main-color-l85;
+    border-bottom: 1px solid $main-color-l30;
 
     &__title {
-        font-size: 3rem;
+        font-size: 2.5rem;
         line-height: 1.2;
 
         &--small {
             display: block;
             margin-bottom: 2rem;
             font-size: 1.2rem;
+            font-weight: 100;
         }
     }
 
@@ -23,7 +24,7 @@
         font-size: 0.9rem;
         list-style: none;
         line-height: 1.5;
-        color: $main-color-l30;
+        color: $main-color-l70;
 
         &:last-of-type {
             margin-bottom: 2rem;
@@ -34,6 +35,10 @@
         height: 0;
         overflow: hidden;
         transition: height 1s ease;
+
+        &--open {
+            margin-top: 2rem;
+        }
     }
 
     &__content {
@@ -59,7 +64,7 @@
 
     h2 {
         margin: 0 0 2rem;
-        font-size: 2rem;
+        font-size: 1.5rem;
         line-height: 1.2;
     }
 }

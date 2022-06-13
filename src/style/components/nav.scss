@@ -19,8 +19,8 @@ nav {
   height: fit-content;
   position: relative;
   list-style: none;
-  border-bottom: 1px solid $active-color-l86;
   background-color: $main-bg-color;
+  border-bottom: 2px solid $second-bg-color;
   overflow: hidden;
 
   &__item {
@@ -31,7 +31,6 @@ nav {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    border-radius: 2px;
     color: $main-color;
     transition: background-color $short-animation-time linear;
 
