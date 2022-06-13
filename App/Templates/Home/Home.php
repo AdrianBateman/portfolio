@@ -1,8 +1,9 @@
 <?php
-require_once TEMPLATES_PATH . 'Home/language-list.php';
 
 function homeTemplate(): string
 {
+    require_once TEMPLATES_PATH . 'Home/language-list.php';
+
     $template = getLaguageList();
 
     $template .= '<section class="work-section"><h2 class="page-title">Work</h2>';
