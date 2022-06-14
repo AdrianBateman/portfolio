@@ -14,9 +14,10 @@
     position: relative;
     font-size: 2.5rem;
     font-style: normal;
-    letter-spacing: 0.15ch;
+    letter-spacing: .15ch;
     color: $main-color;
     font-weight: 900;
+    line-height: .9;
 
     @media screen and (min-width: $DESKTOP) {
       font-size: 3rem;
@@ -34,16 +35,16 @@
 
     &::before {
       @include border-square;
-      top: -0.4ex;
-      left: -0.4ch;
+      top: -.4ex;
+      left: -.4ch;
       border-top-width: 2px;
       border-left-width: 2px;
     }
 
     &::after {
       @include border-square;
-      bottom: -0.4ex;
-      right: -0.4ch;
+      bottom: -.4ex;
+      right: -.4ch;
       border-bottom-width: 2px;
       border-right-width: 2px;
     }
