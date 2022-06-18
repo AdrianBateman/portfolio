@@ -42,3 +42,7 @@ main {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
+
+img {
+    max-width: calc(100vw - 2rem);
+}
