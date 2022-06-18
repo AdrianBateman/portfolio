@@ -14,28 +14,38 @@ function hobbiesTemplate(): string
     <img
         src="/img/inkscape/natural-healing-shop-logo.jpg"
         alt=""
+        width="900"
+        height="495"
     >
 
     <img
         src="/img/inkscape/natural-healing-banner.png"
         alt=""
         style="background-color:white"
+        width="650"
+        height="150"
     >
 
     <img
         src="/img/inkscape/ufo-pattern.svg"
         alt=""
         style="background-color:white"
+        width="501"
+        height="331"
     >
 
     <img
         src="/img/inkscape/mugen-civic-type-r.jpg"
         alt=""
+        width="900"
+        height="637"
     >
 
     <img
         src="/img/inkscape/triumph.jpg"
         alt=""
+        width="900"
+        height="637"
     >
 
     <h2>Gimp</h2>
@@ -43,40 +53,54 @@ function hobbiesTemplate(): string
     <img
         src="/img/gimp/angel.jpg"
         alt=""
+        width="900"
+        height="686"
     >
 
     <img
         src="/img/gimp/star.jpg"
         alt=""
+        width="400"
+        height="400"
     >
 
     <h2>Pencil Drawings</h2>
 
     <img
         src="/img/pencil/houses-come-in-two.jpg"
-        alt="Pencil drawing of a house, half in ruin, half in good condition"
+        alt=""
+        width="900"
+        height="675"
     >
 
     <h2>MyPaint</h2>
 
     <img
         src="/img/my-paint/house.jpg"
-        alt="First drawing in MyPaint of a house"
+        alt=""
+        width="900"
+        height="742"
     >
 
     <img
         src="/img/my-paint/tree.png"
-        alt="Drawing in pencil of a tree"
+        alt=""
+        width="338"
+        height="600"
     >
 
     <img
         src="/img/my-paint/white-eagle.jpg"
-        alt="Pencil style drawing"
+        alt=""
+        width="900"
+        height="840"
     >
 
     <img
         src="/img/my-paint/logo-idea-pencil.png"
-        alt="Idea for pencil style logo"
+        alt=""
+        width="448"
+        height="256"
     >
 
     END;
