@@ -41,8 +41,29 @@ main {
 .page-title {
     margin-top: 2rem;
     margin-bottom: 1rem;
+
+    &__intro {
+        max-width: 60ch;
+    }
 }
 
-img {
-    max-width: calc(100vw - 2rem);
+
+.hobbies {
+    display: grid;
+    margin: 4rem 0;
+    gap: 4rem;
+    overflow: hidden;
+}
+
+.hobbies-img {
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    display: inline-grid;
+}
+
+.hobbies__image {
+    height: auto;
+    max-height: 85vh;
+    background-color: white;
 }
