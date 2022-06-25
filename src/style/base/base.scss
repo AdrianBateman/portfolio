@@ -52,18 +52,32 @@ main {
     display: grid;
     margin: 4rem 0;
     gap: 4rem;
-    overflow: hidden;
+
+    &__image {
+        height: auto;
+        max-height: 85vh;
+        background-color: white;
+    }
 }
 
 .hobbies-img {
-    align-items: center;
-    justify-content: center;
-    height: fit-content;
     display: inline-grid;
-}
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $main-color-l30;
 
-.hobbies__image {
-    height: auto;
-    max-height: 85vh;
-    background-color: white;
+    &__title {
+        font-size: 1.25rem;
+        line-height: 1;
+    }
+
+    &__type {
+        margin-bottom: 1rem;
+        font-size: .85rem;
+    }
+
+    &__description {
+        position: relative;
+        margin-top: 1rem;
+        line-height: 1;
+    }
 }

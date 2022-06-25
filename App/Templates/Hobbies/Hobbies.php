@@ -8,7 +8,8 @@ function hobbiesTemplate($images): string
 
     foreach ($images as $image) {
         $template .= '<div class="hobbies-img">';
-
+        $template .= '<h3 class="hobbies-img__title">' . $image['title'] . '</h3>';
+        $template .= '<p class="hobbies-img__type">' . $image['type'] . '</p>';
         $template .= '<img src="' . $image['src'] . '"';
         $template .= 'alt="' . $image['alt'] . '"';
         $template .= 'width="' . $image['width'] . '"';
