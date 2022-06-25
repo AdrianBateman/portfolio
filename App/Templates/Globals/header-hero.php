@@ -8,7 +8,7 @@ function globalHeaderHeroTemplate(): string
             <small class="header-hero__title--small">
                 Adrian Bateman
             </small>
-            Senior Website Developer
+            Website Developer
             <small class="header-hero__title--small header-hero__title--right">
                 Building responsive web applications since 2012
             </small>
