@@ -1,5 +1,7 @@
-@import "colors";
-@import "fonts";
-@import "sizes";
+@forward "fonts";
+@forward "sizes";
+@forward "colors";
+@forward "sizes";
+@forward "screen-sizes";
 
 $short-animation-time: 150ms;

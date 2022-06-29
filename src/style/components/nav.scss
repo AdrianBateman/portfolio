@@ -1,13 +1,12 @@
-@import "../variables/variables";
-@import "../variables/screen-sizes";
+@use "../variables/variables";
 
 nav {
   position: sticky;
   top: 0;
-  background-color: $main-bg-color;
+  background-color: variables.$main-bg-color;
   z-index: 10;
 
-  @media screen and (min-width: $DESKTOP) {
+  @media screen and (min-width: variables.$DESKTOP) {
     overflow-x: hidden;
   }
 }
@@ -19,8 +18,8 @@ nav {
   height: fit-content;
   position: relative;
   list-style: none;
-  background-color: $main-bg-color;
-  border-bottom: 2px solid $second-bg-color;
+  background-color: variables.$main-bg-color;
+  border-bottom: 2px solid variables.$second-bg-color;
   overflow: hidden;
 
   &__item {
@@ -31,10 +30,10 @@ nav {
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    color: $main-color;
-    transition: background-color $short-animation-time linear;
+    color: variables.$main-color;
+    transition: background-color variables.$short-animation-time linear;
 
-    @media screen and (min-width: $DESKTOP) {
+    @media screen and (min-width: variables.$DESKTOP) {
       margin: 0 .25rem;
       padding: .15rem 2rem;
       letter-spacing: 1px;
@@ -42,18 +41,18 @@ nav {
 
     &:hover,
     &:active {
-      background-color: $active-color;
-      color: $main-bg-color;
+      background-color: variables.$active-color;
+      color: variables.$main-bg-color;
     }
 
     &:focus {
-      outline: 2px solid $active-color;
+      outline: 2px solid variables.$active-color;
       outline-offset: -2px;
     }
 
     &--active {
-      background-color: $active-color;
-      color: $main-bg-color;
+      background-color: variables.$active-color;
+      color: variables.$main-bg-color;
     }
   }
 }

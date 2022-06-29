@@ -1,5 +1,4 @@
-@import "../variables/screen-sizes";
-@import "../variables/variables";
+@use "../variables/variables";
 
 * {
     padding: 0;
@@ -9,17 +8,17 @@
 
 html,
 body {
-    font-family: $primary-font-family;
+    font-family: variables.$primary-font-family;
     line-height: 2;
     font-size: 16px;
-    background-color: $main-bg-color;
-    color: $main-color;
+    background-color: variables.$main-bg-color;
+    color: variables.$main-color;
     scroll-behavior: smooth;
     scroll-padding-top: 3rem;
 }
 
 a {
-    color: $active-color;
+    color: variables.$active-color;
     text-decoration: none;
 }
 
@@ -27,14 +26,14 @@ main,
 footer {
     padding: 0 1rem;
 
-    @media screen and (min-width: $TABLET) {
+    @media screen and (min-width: variables.$TABLET) {
         padding: 0 4rem;
     }
 }
 
 main {
     min-height: 60vh;
-    max-width: $max-render-width;
+    max-width: variables.$max-render-width;
     margin: 0 auto;
 }
 
@@ -46,44 +45,5 @@ main {
 
     &__intro {
         max-width: 60ch;
-    }
-}
-
-
-.hobbies {
-    display: grid;
-    margin: 4rem 0;
-    gap: 4rem;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-
-    &__image {
-        width: 100%;
-        height: auto;
-        max-width: fit-content;
-        max-height: 85vh;
-        background-color: white;
-    }
-}
-
-.hobbies-img {
-    display: inline-grid;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid $main-color-l30;
-    align-content: center;
-
-    &__title {
-        font-size: 1.25rem;
-        line-height: 1;
-    }
-
-    &__type {
-        margin-bottom: 1rem;
-        font-size: .85rem;
-    }
-
-    &__description {
-        position: relative;
-        margin-top: 1rem;
-        line-height: 1;
     }
 }

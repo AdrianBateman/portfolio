@@ -1,0 +1,39 @@
+@use '../variables/variables';
+
+.hobbies {
+    display: grid;
+    margin: 4rem 0;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+    &__image {
+        width: 100%;
+        height: auto;
+        max-width: fit-content;
+        max-height: 85vh;
+        background-color: white;
+    }
+}
+
+.hobbies-img {
+    display: inline-grid;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid variables.$main-color-l30;
+    align-content: center;
+
+    &__title {
+        font-size: 1.25rem;
+        line-height: 1;
+    }
+
+    &__type {
+        margin-bottom: 1rem;
+        font-size: .85rem;
+    }
+
+    &__description {
+        position: relative;
+        margin-top: 1rem;
+        line-height: 1;
+    }
+}

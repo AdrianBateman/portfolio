@@ -1,6 +1,7 @@
-@import "base/base";
-@import "components/nav";
-@import "base/header";
-@import "base/footer";
-@import "components/language";
-@import "components/work-article";
+@use "base/base";
+@use "components/nav";
+@use "base/header";
+@use "base/footer";
+@use "components/language";
+@use "components/work-article";
+@use "components/hobbies";

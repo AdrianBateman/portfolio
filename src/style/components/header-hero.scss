@@ -1,4 +1,4 @@
-@import "../variables/screen-sizes";
+@use "../variables/variables";
 
 .header-hero {
   max-width: fit-content;
@@ -6,7 +6,7 @@
   line-height: 1.25;
   padding: 1rem;
 
-  @media screen and (min-width: $DESKTOP) {
+  @media screen and (min-width: variables.$DESKTOP) {
     margin-top: 5rem;
   }
 
@@ -15,11 +15,11 @@
     font-size: 2.5rem;
     font-style: normal;
     letter-spacing: .15ch;
-    color: $main-color;
+    color: variables.$main-color;
     font-weight: 900;
     line-height: .9;
 
-    @media screen and (min-width: $DESKTOP) {
+    @media screen and (min-width: variables.$DESKTOP) {
       font-size: 3rem;
     }
 
@@ -29,7 +29,7 @@
       width: 1rem;
       height: 1rem;
       border-style: solid;
-      border-color: $active-color;
+      border-color: variables.$active-color;
       border-width: 0;
     }
 
@@ -56,7 +56,7 @@
       font-size: 1.5rem;
       font-weight: 300;
       letter-spacing: normal;
-      color: $main-color-l70;
+      color: variables.$main-color-l70;
     }
 
     &--right {

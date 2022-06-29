@@ -1,7 +1,7 @@
-@import "../variables/variables";
+@use "../variables/variables";
 
 footer {
-  max-width: $max-render-width;
+  max-width: variables.$max-render-width;
   margin: 0 auto;
   text-align: right;
 }
