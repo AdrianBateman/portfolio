@@ -32,3 +32,18 @@ Route\Route::add(
         echo globalFooterTemplate();
     }
 );
+
+Route\Route::add(
+    '/apps',
+    function () {
+        require_once TEMPLATES_PATH . 'Apps/Apps.php';
+
+        $title = 'Apps';
+
+        echo globalHeaderTemplate($title);
+
+        echo appsTemplate();
+
+        echo globalFooterTemplate();
+    }
+);

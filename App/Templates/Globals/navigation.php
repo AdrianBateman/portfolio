@@ -5,6 +5,7 @@ function globalNavigationTemplate(string $pageTitle): string
     $navigation = array(
         'Home' => '/',
         'Hobbies' => '/hobbies',
+        'Apps' => '/apps'
     );
 
     $template = '<nav><ul class="main-nav">';
