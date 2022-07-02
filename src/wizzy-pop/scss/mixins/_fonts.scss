@@ -1,0 +1,10 @@
+@mixin titleLabel {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+
+    &::first-letter {
+        font-size: 1.4rem;
+    }
+}

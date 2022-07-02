@@ -47,3 +47,18 @@ Route\Route::add(
         echo globalFooterTemplate();
     }
 );
+
+Route\Route::add(
+    '/apps/wizzy-pop',
+    function () {
+        require_once TEMPLATES_PATH . 'Apps/Wizzy-pop.php';
+
+        $title = 'Wizzy Pop';
+
+        echo globalHeaderTemplate($title);
+
+        echo wizzyPopTemplate();
+
+        echo globalFooterTemplate();
+    }
+);
