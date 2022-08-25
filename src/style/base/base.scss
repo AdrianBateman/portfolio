@@ -1,4 +1,5 @@
 @use "../variables/variables";
+@use '../mixins/mixins';
 
 * {
     padding: 0;
@@ -39,9 +40,17 @@ main {
 
 .page-title {
     margin-top: 2rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
     display: flex;
     align-items: center;
+
+    &::before {
+        @include border-square;
+        top: -.4ex;
+        left: -.4ch;
+        border-top-width: 2px;
+        border-left-width: 2px;
+    }
 
     &__intro {
         max-width: 60ch;

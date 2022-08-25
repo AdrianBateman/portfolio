@@ -2,9 +2,6 @@ const path = require( 'path' );
 const MiniCssExtractPlugin = require( "mini-css-extract-plugin" );
 const FixStyleOnlyEntriesPlugin = require( "webpack-fix-style-only-entries" );
 const { CleanWebpackPlugin } = require( 'clean-webpack-plugin' );
-const { defineConfig } = require( '@vue/cli-service' );
-const { VueLoaderPlugin } = require( 'vue-loader' );
-
 
 const webpackConfig = { devtool: false };
 
@@ -15,10 +12,6 @@ webpackConfig.output = {
 
 webpackConfig.module = {
     rules: [
-        {
-            test: /\.vue$/,
-            loader: 'vue-loader',
-        },
         {
             test: /\.s[ac]ss$/i,
             use: [
@@ -33,7 +26,6 @@ webpackConfig.module = {
 webpackConfig.entry = {
     style: './src/style/style.scss',
     script: './src/index.js',
-    wizzyPop: './src/wizzy-pop/index.js',
 };
 
 webpackConfig.plugins = [
