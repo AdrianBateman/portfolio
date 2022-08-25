@@ -29,7 +29,6 @@ webpackConfig.entry = {
 };
 
 webpackConfig.plugins = [
-    new VueLoaderPlugin(),
     new CleanWebpackPlugin(),
     new FixStyleOnlyEntriesPlugin(),
     new MiniCssExtractPlugin(
