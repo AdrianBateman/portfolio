@@ -1,5 +1,4 @@
 @use "../variables/variables";
-@use '../mixins/mixins';
 
 * {
     padding: 0;
@@ -44,14 +43,6 @@ main {
     margin-bottom: 3rem;
     display: flex;
     align-items: center;
-
-    &::before {
-        @include mixins.border-square(1.5rem, 1.5rem);
-        top: -.5ch;
-        left: -1.5ch;
-        border-top-width: 3px;
-        border-left-width: 3px;
-    }
 
     &__intro {
         max-width: 60ch;
