@@ -1,8 +1,10 @@
-@mixin border-square {
+@use "../variables/variables";
+
+@mixin border-square($width: 1rem, $height: 1rem) {
     content: "";
     position: absolute;
-    width: 1rem;
-    height: 1rem;
+    width: $width;
+    height: $height;
     border-style: solid;
     border-color: variables.$active-color;
     border-width: 0;

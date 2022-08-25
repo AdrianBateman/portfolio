@@ -39,17 +39,18 @@ main {
 }
 
 .page-title {
+    position: relative;
     margin-top: 2rem;
     margin-bottom: 3rem;
     display: flex;
     align-items: center;
 
     &::before {
-        @include border-square;
-        top: -.4ex;
-        left: -.4ch;
-        border-top-width: 2px;
-        border-left-width: 2px;
+        @include mixins.border-square(1.5rem, 1.5rem);
+        top: -.5ch;
+        left: -1.5ch;
+        border-top-width: 3px;
+        border-left-width: 3px;
     }
 
     &__intro {

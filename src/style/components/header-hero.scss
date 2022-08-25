@@ -25,7 +25,7 @@
     }
 
     &::before {
-      @include border-square;
+      @include mixins.border-square;
       top: -.4ex;
       left: -.4ch;
       border-top-width: 2px;
@@ -33,7 +33,7 @@
     }
 
     &::after {
-      @include border-square;
+      @include mixins.border-square;
       bottom: -.4ex;
       right: -.4ch;
       border-bottom-width: 2px;
