@@ -85,12 +85,16 @@
     }
 }
 
-.work-article-tile{
-    __anchor {
-    line-height: 1;
-    display: block;
-    margin-bottom: 2rem;
-  }
+.work-article-tile {
+    &__anchor {
+        line-height: 1;
+        display: block;
+        margin-bottom: 2rem;
+    }
+
+    &__text:not(:first-of-type) {
+        margin-top: 2rem;
+    }
 }
 
 .arrow {
