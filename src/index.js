@@ -1,45 +1,28 @@
-const descriptionButtons = document.querySelectorAll( '.work-article__details-button' );
+const descriptionButtons = document.querySelectorAll('.work-article__details');
 
-descriptionButtons.forEach( ( button ) =>
-{
-  button.addEventListener( 'click', ( { target } ) =>
-  {
-    const description = target
-      .parentElement
-      .querySelector( '.work-article__description' );
+if (descriptionButtons.length) {
+  descriptionButtons.forEach((button) => {
+    button.addEventListener('click', ({ target }) => {
+      const description = target
+        .parentElement
+        .querySelector('.work-article__main');
 
-    description.classList.toggle( 'work-article__description--open' );
-    const descriptionStyleHeight = description.style.height;
+      description
+        .classList
+        .toggle('work-article__main--open');
+    });
+  });
+}
 
-    description.style.height = (
-      descriptionStyleHeight === ''
-      || descriptionStyleHeight === '0px'
-    )
-      ? `${ description.scrollHeight }px`
-      : '0px';
+const descriptionCloseButtons = document.querySelectorAll('.work-article__details-close');
 
-    if ( description.classList.contains( 'work-article__description--open' ) )
-    {
-      description.scrollIntoView(
-        {
-          behavior: "smooth",
-          block: "start",
-        },
-      );
-    } else
-    {
+if (descriptionCloseButtons.length) {
+  descriptionCloseButtons.forEach((button) => {
+    button.addEventListener('click', ({ target }) => {
       target
         .parentElement
-        .scrollIntoView(
-          {
-            behavior: "smooth",
-            block: "start",
-          },
-        );
-    }
-
-    target.classList.toggle( 'arrow--up' );
-
-  } );
-
-} );
+        .classList
+        .toggle('work-article__main--open');
+    });
+  });
+}
