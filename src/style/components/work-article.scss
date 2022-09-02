@@ -59,7 +59,6 @@
             right: -16px;
             bottom: -16px;
             border-radius: 2px;
-            //background-color: colors.$second-bg-color;
             box-shadow: 3px 3px 8px hsl(300deg, 6%, 8%);
         }
     }
@@ -97,7 +96,7 @@
     &__details {
         display: flex;
         width: fit-content;
-        margin: 0;
+        margin: 2rem 0 0;
         padding: 1rem 2rem;
         align-items: center;
         font-weight: 600;
@@ -155,14 +154,39 @@
 
     &__introduction {
         position: relative;
-        max-width: 60ch;
         padding: 1rem 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+
+        @media screen and (min-width: 500px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        &--text {
+            height: fit-content;
+            padding: 1rem;
+            background-color: rgb(15, 15, 15);
+            border-radius: 3px;
+        }
+    }
+
+    &__introduction-image {
+        text-align: center;
     }
 }
 
 .work-article-languages {
     &__item {
         margin: 0 .5ch;
+    }
+}
+
+.work-article-img {
+    &__image {
+        max-height: 50vh;
+        max-width: 50vw;
+        box-shadow: 1px 1px 3px colors.$main-color;
     }
 }
 

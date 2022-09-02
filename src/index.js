@@ -5,7 +5,18 @@ if (descriptionButtons.length) {
     button.addEventListener('click', ({ target }) => {
       const description = target
         .parentElement
-        .querySelector('.work-article__main');
+        .querySelector('.work-article__main') ||
+
+        target
+          .parentElement
+          .parentElement
+          .querySelector('.work-article__main') ||
+
+        target
+          .parentElement
+          .parentElement
+          .parentElement
+          .querySelector('.work-article__main');
 
       description
         .classList
