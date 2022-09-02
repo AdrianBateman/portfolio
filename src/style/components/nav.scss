@@ -5,6 +5,7 @@ nav {
   top: 0;
   background-color: variables.$main-bg-color;
   z-index: 10;
+  border-bottom: 2px solid variables.$second-bg-color;
 
   @media screen and (min-width: variables.$DESKTOP) {
     overflow-x: hidden;
@@ -14,13 +15,14 @@ nav {
 .main-nav {
   position: absolute;
   width: 100vw;
+  max-width: variables.$max-render-width;
+  margin: 0 auto;
   display: flex;
   height: fit-content;
   position: relative;
   list-style: none;
-  background-color: variables.$main-bg-color;
-  border-bottom: 2px solid variables.$second-bg-color;
   overflow: hidden;
+  background-color: variables.$main-bg-color;
 
   &__item {
     display: block;

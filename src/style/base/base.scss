@@ -29,6 +29,10 @@ footer {
     @media screen and (min-width: variables.$TABLET) {
         padding: 0 4rem;
     }
+
+    @media screen and (min-width: variables.$max-render-width) {
+        padding: 0;
+    }
 }
 
 main {
