@@ -105,15 +105,15 @@
 
     &__main {
         display: grid;
-        gap: 4rem 0;
+        gap: 2rem 0;
         position: fixed;
-        top: 2.3rem;
-        left: auto;
-        right: auto;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
         max-width: variables.$max-render-width;
-        max-height: calc(100vh - 2.3rem);
         margin: 0 auto;
-        padding: 4rem;
+        padding: 1rem;
         overflow-y: scroll;
         overflow-x: hidden;
         overscroll-behavior: contain;
@@ -128,6 +128,10 @@
         @media screen and (min-width: 500px) {
             grid-template-columns: 1fr 1fr;
             gap: 6rem 1rem;
+            top: 2.3rem;
+            max-height: calc(100vh - 2.3rem);
+            left: auto;
+            padding: 4rem;
         }
 
         &--open {
