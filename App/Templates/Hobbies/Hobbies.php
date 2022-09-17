@@ -9,7 +9,7 @@ function hobbiesTemplate(array $images): string
     $template .= '<rect stroke="#ebebeb" width="22" height="22" x="8" y="1" />';
     $template .= '</svg>Art</h2>';
 
-    $template .= '<p class="page-title__intro">When not coding, I love to kick back and do some creative work.';
+    $template .= '<p class="page-title__intro">When not coding, I love to kick back and do some creative work. ';
     $template .= 'I use a range of media, both real and digital.</p>';
     $template .= '<div class="hobbies">';
 

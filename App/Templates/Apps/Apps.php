@@ -11,7 +11,7 @@ function appsTemplate(): string
 
     $template .= '<h3>Wizzy Pop</h3>';
 
-    $template .= '<a href="/apps/wizzy-pop">Play</a>';
+    $template .= '<a href="https://wizzypop.a-bateman.co.uk">Play</a>';
 
     return $template;
 }
