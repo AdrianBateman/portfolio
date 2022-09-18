@@ -23,9 +23,7 @@ Route\Route::add(
 
         require_once TEMPLATES_PATH . 'Hobbies/Hobbies.php';
 
-        $title = 'Hobbies';
-
-        echo globalHeaderTemplate($title);
+        echo globalHeaderTemplate('Hobbies');
 
         echo hobbiesTemplate($images['images']);
 
@@ -38,9 +36,7 @@ Route\Route::add(
     function () {
         require_once TEMPLATES_PATH . 'Apps/Apps.php';
 
-        $title = 'Apps';
-
-        echo globalHeaderTemplate($title);
+        echo globalHeaderTemplate('Apps');
 
         echo appsTemplate();
 
@@ -49,15 +45,13 @@ Route\Route::add(
 );
 
 Route\Route::add(
-    '/apps/wizzy-pop',
+    '/contact',
     function () {
-        require_once TEMPLATES_PATH . 'Apps/Wizzy-pop.php';
+        require_once TEMPLATES_PATH . 'Contact/Contact.php';
 
-        $title = 'Wizzy Pop';
+        echo globalHeaderTemplate('Contact');
 
-        echo globalHeaderTemplate($title);
-
-        echo wizzyPopTemplate();
+        echo contactTemplate();
 
         echo globalFooterTemplate();
     }

@@ -3,12 +3,12 @@
 function globalFooterTemplate(): string
 {
     $footer = '</main><footer><address>' .
-        '<p>Copyright &copy;';
+        '<p>Copyright &copy; ';
 
     $footer .= date('Y');
 
-    $footer .= 'Adrian Bateman ' .
-        '| <a href="/about">About</a>' .
+    $footer .= ' Adrian Bateman ' .
+        '| <a href="/contact">Contact</a>' .
         '</p></address>' .
         '</footer>';
 
