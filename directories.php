@@ -14,4 +14,6 @@ defined('DATA') || define('DATA', __DIR__ . DIRECTORY_SEPARATOR . 'App/Data/');
 
 defined('METHODS') || define('METHODS', __DIR__ . DIRECTORY_SEPARATOR . 'App/Methods/');
 
+defined('FUNCTIONS') || define('FUNCTIONS', __DIR__ . DIRECTORY_SEPARATOR . 'App/Functions/');
+
 defined('DIST') || define('DIST', __DIR__ . DIRECTORY_SEPARATOR . 'html/dist/');
