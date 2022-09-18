@@ -9,7 +9,7 @@ function appsTemplate(): string
     $template .= '<rect stroke="#ebebeb" width="22" height="22" x="8" y="1" />';
     $template .= '</svg>Apps</h2>';
 
-    $template .= '<h3>Wizzy Pop</h3>';
+    $template .= '<h3>Wizzy Popper Game</h3>';
 
     $template .= '<a href="https://wizzypop.a-bateman.co.uk">Play</a>';
 
