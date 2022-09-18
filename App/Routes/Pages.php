@@ -7,12 +7,17 @@ Route\Route::add(
     '/',
     function () {
         require_once TEMPLATES_PATH . 'Home/Home.php';
+        $dom = new DOMDocument;
+        $dom->loadHTML(globalHeaderTemplate('Home'));
+        // if ($dom->validate()) {
+        //     echo "This document is valid!\n";
+        // }
 
-        echo globalHeaderTemplate('Home');
+        //echo globalHeaderTemplate('Home');
 
-        echo homeTemplate();
+        //echo homeTemplate();
 
-        echo globalFooterTemplate();
+        //echo globalFooterTemplate();
     }
 );
 
