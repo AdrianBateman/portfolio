@@ -5,7 +5,7 @@ function globalHeaderTemplate(string $pageTitle): string
     require_once __DIR__ . DIRECTORY_SEPARATOR . 'navigation.php';
     require_once __DIR__ . DIRECTORY_SEPARATOR . 'header-hero.php';
 
-    $style = file_get_contents(BASE_PATH . 'html/dist/style.css');
+    $style = file_get_contents(DIST . 'style.css');
 
     $template = '<!doctype html><html lang="en"><head>';
     $template .= '<meta charset="UTF-8">';
