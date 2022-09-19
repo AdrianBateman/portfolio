@@ -109,7 +109,7 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 100vw;
+        width: calc(100vw - 3rem);
         height: 100vh;
         max-width: variables.$max-render-width;
         margin: 0 auto;
@@ -125,13 +125,16 @@
         transform: translateX(100vw);
         transition: transform .35s linear;
 
-        @media screen and (min-width: 500px) {
+        @media screen and (min-width: 800px) {
             grid-template-columns: 1fr 1fr;
             gap: 6rem 1rem;
             top: 2.3rem;
             max-height: calc(100vh - 2.3rem);
-            left: auto;
             padding: 4rem;
+        }
+
+        @media screen and (min-width: 1000px) {
+            left: auto;
         }
 
         &--open {
@@ -177,6 +180,7 @@
 
 .work-article-img {
     &__image {
+        width: auto;
         max-height: 50vh;
         max-width: 50vw;
         box-shadow: 1px 1px 3px variables.$main-color;
@@ -187,6 +191,10 @@
     &__title {
         font-size: 2rem;
         line-height: 1.5;
+
+        small {
+            font-size: 1rem;
+        }
     }
 
     &__anchor {
