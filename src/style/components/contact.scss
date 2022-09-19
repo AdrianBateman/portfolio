@@ -1,0 +1,21 @@
+.contact {
+    &__links {
+        list-style: none;
+    }
+}
+
+.contact-list {
+    &__logo {
+        width: auto;
+        max-height: 2rem;
+        margin-right: 1ch;
+    }
+
+    &__item {
+        margin-bottom: 1.5rem;
+    }
+
+    &__link {
+        display: flex;
+    }
+}
