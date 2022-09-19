@@ -16,4 +16,4 @@ defined('METHODS') || define('METHODS', __DIR__ . DIRECTORY_SEPARATOR . 'App/Met
 
 defined('FUNCTIONS') || define('FUNCTIONS', __DIR__ . DIRECTORY_SEPARATOR . 'App/Functions/');
 
-defined('DIST') || define('DIST', $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'html/dist/');
+defined('DIST') || define('DIST', $_SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'dist/');
