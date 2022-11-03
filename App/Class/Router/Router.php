@@ -4,7 +4,7 @@ namespace Route;
 
 class Route
 {
-    private static array $routes = array();
+    private static $routes = array();
     private static $pathNotFound = null;
     private static $methodNotAllowed = null;
 

@@ -109,11 +109,11 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: calc(100vw - 3rem);
+        width: 100vw;
         height: 100vh;
         max-width: variables.$max-render-width;
         margin: 0 auto;
-        padding: 1rem;
+        padding: 5rem 1rem 1rem;
         overflow-y: scroll;
         overflow-x: hidden;
         overscroll-behavior: contain;
