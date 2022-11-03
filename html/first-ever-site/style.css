@@ -1,0 +1,54 @@
+:root {
+  --background: rgb(204, 198, 198);
+  --font-color: rgb(24, 24, 24);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--background);
+  color: var(--font-color);
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav__link {
+  display: block;
+  margin: 0 1rem;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: inherit;
+  box-shadow: 1px 1px 3px var(--font-color);
+}
+
+header {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo {
+  font-family: Garamond, serif;
+  font-size: 4.5rem;
+  letter-spacing: 4px;
+  line-height: 0.85;
+  color: #271e64;
+  text-shadow: -1px -1px var(--font-color), 1px 1px yellow, 1px -1px var(--font-color), -1px 1px var(--font-color);
+}
+
+.hero-logo--red {
+  display: block;
+  color: #510707;
+}
